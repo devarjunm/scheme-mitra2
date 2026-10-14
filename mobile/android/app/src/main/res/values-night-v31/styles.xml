@@ -1,0 +1,17 @@
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowSplashScreenBackground">#F4F7EF</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/launch_icon</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">#39734D</item>
+        <item name="android:windowSplashScreenAnimationDuration">400</item>
+        <item name="android:postSplashScreenTheme">@style/NormalTheme</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#F4F7EF</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:statusBarColor">#F4F7EF</item>
+        <item name="android:navigationBarColor">#F4F7EF</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

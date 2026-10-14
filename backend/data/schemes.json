@@ -1,0 +1,2161 @@
+[
+  {
+    "slug": "pmksy-micro-irrigation",
+    "name": "PMKSY — Per Drop More Crop (Micro-irrigation)",
+    "name_mr": "प्रधानमंत्री कृषी सिंचन योजना — प्रती थेंब अधिक पिक (सूक्ष्म सिंचन घटक)",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State portal / Central scheme component",
+    "category": "Irrigation",
+    "icon": "water",
+    "need": "irrigation",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "The MahaDBT page describes support for drip and sprinkler micro-irrigation. The page states assistance shares of 55% for small and marginal farmers and 45% for other farmers, subject to the scheme's current component rules and approval.",
+    "benefit_summary": "Official page states 55% for small/marginal farmers and 45% for other farmers. This is not a guaranteed amount; eligible equipment, area limits, prior-benefit rules and approval apply.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AC7B56240D6D84F28",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "The page lists Aadhaar, 7/12 and 8-A records as eligibility requirements; a caste certificate is required for SC/ST applicants.",
+      "The page describes a 5-hectare benefit limit.",
+      "For an electric water pump, the page requires a permanent electricity connection and a recent electricity bill.",
+      "The page describes a 7- or 10-year restriction for repeat benefits on a survey number, depending on when the previous benefit was received.",
+      "After prior approval, the farmer must buy an eligible micro-irrigation set from an authorized seller, install it, and upload the bill within 30 days.",
+      "Documents listed on the page: 7/12, 8-A, electricity bill, purchase invoice and prior-consent letter.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The linked MahaDBT detail page was directly captured; its 55%/45% figures and listed document items remain pending a human check against the current component schedule and Government Resolution."
+    ],
+    "document_items": [
+      {
+        "id": "land_7_12",
+        "label": "7/12 extract",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A extract",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "electricity_bill",
+        "label": "Recent electricity bill (if using an electric water pump)",
+        "stage": "Before applying when applicable",
+        "required": true
+      },
+      {
+        "id": "purchase_invoice",
+        "label": "Invoice for the approved micro-irrigation set",
+        "stage": "After prior approval; upload within the period stated on the official page",
+        "required": true
+      },
+      {
+        "id": "prior_consent",
+        "label": "Prior-consent / approval letter",
+        "stage": "Issued through the government process",
+        "required": true
+      }
+    ],
+    "checks": [
+      {
+        "id": "aadhaar",
+        "label": "Aadhaar requirement",
+        "field": "aadhaar_present",
+        "kind": "boolean"
+      },
+      {
+        "id": "land_7_12",
+        "label": "7/12 record",
+        "field": "documents.land_7_12",
+        "kind": "document"
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A record",
+        "field": "documents.land_8a",
+        "kind": "document"
+      },
+      {
+        "id": "area_limit",
+        "label": "Area limit stated on source page (up to 5 ha)",
+        "field": "land_area_acres",
+        "kind": "area_cap",
+        "value": 12.3553
+      },
+      {
+        "id": "electricity",
+        "label": "Permanent electricity connection for an electric water pump",
+        "field": "permanent_electric_connection",
+        "kind": "conditional_boolean"
+      },
+      {
+        "id": "prior_benefit",
+        "label": "Prior benefit on this survey number (time restriction applies)",
+        "field": "prior_micro_benefit_year",
+        "kind": "history"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check the current MahaDBT portal status and exact scheme component/window before applying; the captured shared notice said it would soon reopen, so current availability is not confirmed.",
+      "Open the official application portal and verify the current component, application window, process, and documents before proceeding.",
+      "Scheme Mitra does not submit applications or receive official application status."
+    ],
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "catalog_capture_date": "2026-10-08",
+    "documents_review_complete": false,
+    "document_review_note": "The current component-specific document checklist has not been independently reviewed. A blank or partial list is not confirmation that no documents are required. Confirm exact requirements on the official portal; do not upload files or share identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "mission-integrated-horticulture-development",
+    "name": "Mission for Integrated Development of Horticulture (MIDH)",
+    "name_mr": "एकात्मिक फलोत्पादन विकास अभियान",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State portal / Central mission components",
+    "category": "Horticulture",
+    "icon": "leaf",
+    "need": "horticulture",
+    "crop_tags": [
+      "onion",
+      "vegetables",
+      "horticulture"
+    ],
+    "summary": "The MahaDBT page lists horticulture components including vegetable development, horticulture mechanization, protected cultivation and post-harvest activities. It also lists onion-storage infrastructure under post-harvest management. The applicable component must be selected and checked on the official portal.",
+    "benefit_summary": "The official page lists multiple activity-specific assistance components. This demo does not reproduce a component-specific amount; check the current official benefit schedule before acting.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AF823840F3424F82E",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "The page requires Aadhaar, 7/12 and 8-A records; an SC/ST certificate is required for applicants in those categories.",
+      "The page states that the farmer or farmer group must have horticulture crops.",
+      "The listed documents include 7/12, 8-A, an SC/ST certificate where applicable, and a quotation or bill for the item/equipment.",
+      "The page lists many distinct components; conditions vary by component.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The linked MahaDBT page lists multiple horticulture components. Component amounts and current-year availability remain unconfirmed; use only the latest official schedule."
+    ],
+    "document_items": [
+      {
+        "id": "land_7_12",
+        "label": "7/12 extract",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A extract",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "caste_certificate",
+        "label": "SC/ST certificate (if applicable)",
+        "stage": "If applicable",
+        "required": true
+      },
+      {
+        "id": "equipment_quote",
+        "label": "Quotation or bill for the selected item/equipment",
+        "stage": "Depends on selected component",
+        "required": true
+      }
+    ],
+    "checks": [
+      {
+        "id": "aadhaar",
+        "label": "Aadhaar requirement",
+        "field": "aadhaar_present",
+        "kind": "boolean"
+      },
+      {
+        "id": "land_7_12",
+        "label": "7/12 record",
+        "field": "documents.land_7_12",
+        "kind": "document"
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A record",
+        "field": "documents.land_8a",
+        "kind": "document"
+      },
+      {
+        "id": "horticulture_crop",
+        "label": "Horticulture crop / relevant component",
+        "field": "crop",
+        "kind": "crop_tag",
+        "value": [
+          "onion",
+          "vegetables",
+          "horticulture"
+        ]
+      },
+      {
+        "id": "social_certificate",
+        "label": "SC/ST certificate (if applicable)",
+        "field": "social_category",
+        "kind": "conditional_category"
+      },
+      {
+        "id": "component",
+        "label": "Selected activity and component-specific conditions",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check the current MahaDBT portal status and exact scheme component/window before applying; the captured shared notice said it would soon reopen, so current availability is not confirmed.",
+      "Open the official application portal and verify the current component, application window, process, and documents before proceeding.",
+      "Scheme Mitra does not submit applications or receive official application status."
+    ],
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "catalog_capture_date": "2026-10-08",
+    "documents_review_complete": false,
+    "document_review_note": "The current component-specific document checklist has not been independently reviewed. A blank or partial list is not confirmation that no documents are required. Confirm exact requirements on the official portal; do not upload files or share identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "state-agriculture-mechanization",
+    "name": "State Agriculture Mechanization Scheme",
+    "name_mr": "राज्य कृषी यांत्रिकीकरण योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State",
+    "category": "Farm machinery",
+    "icon": "tractor",
+    "need": "machinery",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "The MahaDBT State Agriculture Mechanization page lists assistance for machinery/implements, custom-hiring facilities, one-implement support and a 10-year same-implement repeat restriction. Its description substantially overlaps the separate SMAM entry; verify that the two are distinct components before publishing both.",
+    "benefit_summary": "Support is listed for selected equipment; the amount depends on the current official benefit schedule and component. No rate is asserted. Check duplicate/overlap and the current schedule before display.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A147B39AD4D6A9082",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "The page lists Aadhaar and 7/12 and 8-A records as requirements; a caste certificate is required for SC/ST applicants.",
+      "The page lists machinery/implements such as tractors, power tillers, operated equipment, processing sets and post-harvest technology.",
+      "The page states that support is payable for one implement; a 10-year restriction applies to another benefit for the same implement.",
+      "The page lists quotation and inspection information, self-declaration and prior-consent as required documents.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The page describes machinery support and a repeat-benefit restriction. The current schedule and whether this entry is distinct from SMAM must be checked.",
+      "Potential duplicate/overlap: State Agriculture Mechanization and SMAM detail pages have substantially matching equipment categories and repeat-benefit language. An independent reviewer must compare current Government Resolutions and determine whether they are distinct funding components before publication."
+    ],
+    "document_items": [
+      {
+        "id": "land_7_12",
+        "label": "7/12 extract",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A extract",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "equipment_quote",
+        "label": "Quotation and approved inspection report for the selected implement",
+        "stage": "Before applying",
+        "required": true
+      },
+      {
+        "id": "self_declaration",
+        "label": "Self-declaration",
+        "stage": "As listed on the official page",
+        "required": true
+      },
+      {
+        "id": "prior_consent",
+        "label": "Prior-consent letter",
+        "stage": "Government process",
+        "required": true
+      }
+    ],
+    "checks": [
+      {
+        "id": "aadhaar",
+        "label": "Aadhaar requirement",
+        "field": "aadhaar_present",
+        "kind": "boolean"
+      },
+      {
+        "id": "land_7_12",
+        "label": "7/12 record",
+        "field": "documents.land_7_12",
+        "kind": "document"
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A record",
+        "field": "documents.land_8a",
+        "kind": "document"
+      },
+      {
+        "id": "social_certificate",
+        "label": "SC/ST certificate (if applicable)",
+        "field": "social_category",
+        "kind": "conditional_category"
+      },
+      {
+        "id": "selected_item",
+        "label": "Selected eligible machinery/implement",
+        "field": "selected_machinery",
+        "kind": "unknown"
+      },
+      {
+        "id": "prior_benefit",
+        "label": "Prior benefit for the same implement (10-year restriction)",
+        "field": "previous_same_machinery_year",
+        "kind": "history"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check the current MahaDBT portal status and exact scheme component/window before applying; the captured shared notice said it would soon reopen, so current availability is not confirmed.",
+      "Open the official application portal and verify the current component, application window, process, and documents before proceeding.",
+      "Scheme Mitra does not submit applications or receive official application status."
+    ],
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "catalog_capture_date": "2026-10-08",
+    "documents_review_complete": false,
+    "document_review_note": "The captured page lists Aadhaar, 7/12, 8-A, quotation/inspection information, self-declaration and prior consent; caste certificate is conditional for SC/ST applicants. This checklist may not apply uniformly to all implements and overlaps with SMAM. Confirm the current component and exact items on MahaDBT. Do not upload documents or share identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "sub-mission-farm-mechanization",
+    "name": "Sub-Mission on Agricultural Mechanization (SMAM)",
+    "name_mr": "कृषी यांत्रिकीकरण उप-अभियान",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Farm machinery",
+    "icon": "tractor",
+    "need": "machinery",
+    "crop_tags": [],
+    "summary": "The directly captured MahaDBT page lists assistance for selected farm machinery/implements and custom-hiring facilities. It states one implement benefit and a 10-year restriction for a repeat benefit on the same implement category. Amounts are in a linked benefit PDF and are not transcribed as current rates.",
+    "benefit_summary": "The official page lists machinery and custom-hiring categories, but the amount depends on the selected item and a separate schedule. No current amount or window is asserted. The description substantially overlaps the separate State Agriculture Mechanization entry; a reviewer must establish whether the records are distinct before publishing both.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A23C0254248DAFF28",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_COMPONENT_AND_DUPLICATE_CHECK_PENDING",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "MahaDBT detail page captured 2026-10-08 lists tractors, power tillers, tractor/power-tiller implements, bullock- and manually-operated implements, processing sets, post-harvest, horticulture, special and self-propelled equipment, Custom Hiring Centres and high-technology service centres.",
+      "The page lists Aadhaar, 7/12 and 8-A; caste proof for SC/ST applicants; one implement benefit; family tractor proof for tractor-operated implements; and a 10-year wait for the same implement category. These statements need a current-GR check.",
+      "The page links the benefit schedule https://mahadbt.maharashtra.gov.in/Farmer/PDF/Benefit_SubmissionOnFarmMechanization.pdf and GR https://mahadbt.maharashtra.gov.in/Farmer/PDF/Scheme-SubMissionOnFarmMechanization.pdf; the schedule has not been fully transcribed.",
+      "Potential overlap: the separate State Agriculture Mechanization page uses substantially matching equipment and repeat-benefit wording. Verify whether these are distinct funding components before publishing both.",
+      "Official MahaDBT index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [
+      {
+        "id": "aadhaar_card",
+        "label": "Aadhaar card (listed on MahaDBT; do not share its number or a copy with Scheme Mitra)",
+        "stage": "Only submit through the official process if currently required",
+        "required": true
+      },
+      {
+        "id": "land_7_12",
+        "label": "7/12 extract",
+        "stage": "Confirm current component requirements",
+        "required": true
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A extract",
+        "stage": "Confirm current component requirements",
+        "required": true
+      },
+      {
+        "id": "equipment_quote",
+        "label": "Quotation and recognised testing-institution inspection report for the selected implement",
+        "stage": "Selected implement only; confirm current format",
+        "required": true
+      },
+      {
+        "id": "self_declaration",
+        "label": "Self-declaration",
+        "stage": "As listed on the official page",
+        "required": true
+      },
+      {
+        "id": "prior_consent",
+        "label": "Prior-consent letter",
+        "stage": "Issued through the official process",
+        "required": true
+      }
+    ],
+    "application_process": [
+      "Check the current MahaDBT portal status and selected implement/component; the shared portal notice captured 2026-10-08 said it would soon reopen, so current availability is unknown.",
+      "The captured page describes selected machinery/custom-hiring support and a 10-year same-implement repeat restriction. Use the linked benefit schedule and current Government Resolution to confirm the rate and eligibility.",
+      "Apply only through the official MahaDBT route after prior consent. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "The SMAM page lists Aadhaar, 7/12, 8-A, equipment quotation and recognised inspection report, self-declaration and prior consent; a caste certificate is conditional for SC/ST applicants. Confirm exact current component requirements and formats on MahaDBT. Do not upload documents or share identity numbers with Scheme Mitra; independent review is pending."
+  },
+  {
+    "slug": "national-food-security-mission",
+    "name": "National Food Security and Nutrition Mission (NFSNM) — Maharashtra components",
+    "name_mr": "राष्ट्रीय अन्न सुरक्षा अभियान : अन्नधान्य, तेलबिया, ऊस व कापूस",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Crop production",
+    "icon": "sprout",
+    "need": "crop_protection",
+    "crop_tags": [],
+    "summary": "The MahaDBT page lists crop/district-specific NFSM components such as seeds, nutrient and pest management, farm ponds, pumps, pipes and implements. Its general narrative includes historical programme periods, so its older crop/district terms must not be assumed current. A separate Maharashtra guideline dated 13 May 2026 covers only the 2026-27 NFSNM Seed Component for qualifying seed producers.",
+    "benefit_summary": "No blanket input benefit is asserted. The older MahaDBT page lists multiple activity-specific supports with separate benefit schedules. The 2026-27 State seed-component guideline describes rate-capped support for qualifying seed-production activities, including foundation-seed assistance, subject to crop, variety, grower, area and district allocations; it is not a general seed-purchase subsidy.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_MAHADBT_DETAIL_AND_2026_27_STATE_GUIDELINE_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_HISTORICAL_UMBRELLA_CURRENT_SEED_COMPONENT_SPECIFIC",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "MahaDBT detail page captured 2026-10-08 lists seed distribution, integrated nutrient management, integrated pest management, farm pond, pump set, pipe and farm-equipment components. The page’s background refers to historical 2007-08, 2014-15 and older programme periods; it is not a current annual crop/district notification.",
+      "The MahaDBT page lists crop-specific district coverage and says one benefit for a given item may be available from only one scheme. It lists 7/12 and 8-A, a quotation for pump/pipe/farm-pond items, a Government-recognized test certificate for pump components, caste proof where applicable, undertaking and prior consent. Component-specific current terms require review.",
+      "MahaDBT benefit schedule: https://mahadbt.maharashtra.gov.in/Farmer/PDF/Benefit_NationalFoodSecurityMissionFood_GrainsOilseedsSugarcaneCotton.pdf ; linked GR: https://mahadbt.maharashtra.gov.in/Farmer/PDF/Scheme-NFSM.pdf.",
+      "Separate Maharashtra Agriculture Department guideline dated 2026-05-13 covers the FY 2026-27 NFSNM Seed Component. It describes 50% assistance on eligible foundation-seed cost subject to the prescribed lower-rate ceiling, eligible seed growers/crops/varieties, certification, crop/area limits and SATHI/NSC procedures. It is not a general farmer seed-purchase subsidy: https://krishi.maharashtra.gov.in/Site/Upload/Pdf/kharip%202026%20guidelines.pdf.",
+      "The 2026-27 state guideline includes crop/district targets in annexures; this record does not reproduce or validate every allocation. Confirm the exact crop, variety, district and current window with the relevant Agriculture Department office."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Identify the exact NFSNM component, crop, variety, district and financial year; the general MahaDBT page and seed-production component are not interchangeable.",
+      "For the 2026-27 seed component, the State guideline describes SATHI registration and National Seeds Corporation involvement for qualifying seed growers. Verify current allocations and steps with the district Agriculture Department.",
+      "For other components, check the latest MahaDBT notice, benefit schedule and Government Resolution. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "NFSNM is component-specific. The MahaDBT page lists different evidence for pump, pipe, farm-pond, equipment and seed activities; the 2026-27 seed guideline is specifically for seed producers and uses SATHI/NSC steps. No single complete checklist applies. Empty checklist is not confirmation that no documents are required. Confirm the current crop/variety/district component and do not share identity numbers/files in Scheme Mitra."
+  },
+  {
+    "slug": "birsa-munda-krushi-kranti-yojana",
+    "name": "Birsa Munda Krushi Kranti Yojana (Tribal Sub Plan / Outside Tribal Sub Plan)",
+    "name_mr": "बिरसा मुंडा कृषी क्रांती योजना (आदिवासी उप योजना / आदिवासी उप योजना बाह्य)",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Irrigation",
+    "icon": "water",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "The MahaDBT page describes irrigation components for Scheduled Tribe farmers and states a ₹1.5 lakh annual-income ceiling, landholding of 0.20–6 ha (0.40 ha minimum for a new well), and exclusion of six districts. It lists component caps and extensive component-specific documents; the page is not dated, so rates and rules need current-GR review.",
+    "benefit_summary": "The captured page lists caps: new well ₹2.50 lakh; repair ₹50,000; in-well boring ₹20,000; pump ₹20,000; electricity connection ₹10,000; farm-pond lining ₹1 lakh; drip ₹50,000/sprinkler ₹25,000; PVC pipe ₹30,000; kitchen garden ₹500. Treat as page-captured, not current guaranteed amounts.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51ACA98B76653871714",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_COMPONENT_AND_CURRENT_GR_REVIEW_PENDING",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The MahaDBT page identifies Scheduled Tribe farmers and lists valid ST certificate, 7/12 and 8-A, income proof up to ₹1.5 lakh, landholding 0.20–6 ha (0.40 ha minimum for a new well), and a five-year repeat-benefit restriction for a beneficiary/family after full assistance.",
+      "The page excludes Mumbai, Sindhudurg, Ratnagiri, Satara, Sangli and Kolhapur. It lists component caps for well construction/repair, in-well boring, pump, electricity, farm-pond lining, micro-irrigation, PVC pipe and kitchen garden; current GR/rates need review.",
+      "Documents differ by component. New-well documents include caste proof, land/income records, affidavit, land/spacing/water-availability attestations, inspection/recommendation, site photo and Gram Sabha resolution. Other components have separate requirements; do not treat this as one universal checklist.",
+      "Linked GR: https://mahadbt.maharashtra.gov.in/Farmer/PDF/Scheme-BirsaMundaKrishiKrantiYojana(TribalSubPlan-OutsideTribalSubPlan).pdf."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Check the current MahaDBT window, district and selected irrigation component. The captured shared portal notice said it would soon reopen; current availability is unknown.",
+      "Confirm land/income/category limits, excluded districts, repeat-benefit history and the exact component-specific document bundle in the current GR.",
+      "Use only the official MahaDBT application route; Scheme Mitra does not submit the form."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "The official page lists distinct document bundles for new wells, well repair/in-well boring, and farm-pond/electricity/pump/micro-irrigation items. Requirements include caste and income proof, land extracts, talathi/technical records, affidavits, inspection/recommendation and Gram Sabha documents depending on the component. This is not a universal checklist; confirm current GR and selected component. Do not share ID numbers or files with Scheme Mitra."
+  },
+  {
+    "slug": "rainfed-area-development-programme",
+    "name": "Rainfed Area Development Programme",
+    "name_mr": "कोरडवाहू क्षेत्र विकास कार्यक्रम",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Farm development",
+    "icon": "sprout",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "Rainfed Area Development Programme is listed on the official MahaDBT Farmer schemes page. The linked page showed the scheme heading but no usable summary, benefit, eligibility or document terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A22D675CB15830876",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: कोरडवाहू क्षेत्र विकास कार्यक्रम.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The linked page showed the scheme heading but no usable summary, benefit, eligibility or document terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "bhausaheb-fundkar-phalbaag-lagvad",
+    "name": "Bhausaheb Fundkar Phalbaag Lagvad Yojana",
+    "name_mr": "भाऊसाहेब फुंडकर फळबाग लागवड योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Horticulture",
+    "icon": "leaf",
+    "need": "horticulture",
+    "crop_tags": [],
+    "summary": "Bhausaheb Fundkar Phalbaag Lagvad Yojana is listed on the official MahaDBT Farmer schemes page. The captured detail page exposed a Government Resolution link but no usable current scheme terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AD8FABF0B538FA508",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: भाऊसाहेब फुंडकर फळबाग लागवड योजना.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The captured detail page exposed a Government Resolution link but no usable current scheme terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "rashtriya-krushi-vikas-yojana-raftaar",
+    "name": "Rashtriya Krushi Vikas Yojana — RAFTAAR",
+    "name_mr": "राष्ट्रीय कृषी विकास योजना - रफ्तार",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Agriculture development",
+    "icon": "sprout",
+    "need": "crop_protection",
+    "crop_tags": [],
+    "summary": "Rashtriya Krushi Vikas Yojana — RAFTAAR is listed on the official MahaDBT Farmer schemes page. The linked page showed the scheme heading but no usable summary, benefit, eligibility or document terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AD2B59110D39A6B05",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: राष्ट्रीय कृषी विकास योजना - रफ्तार.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The linked page showed the scheme heading but no usable summary, benefit, eligibility or document terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "chief-minister-sustainable-agriculture-irrigation",
+    "name": "Chief Minister Sustainable Agriculture Irrigation Scheme",
+    "name_mr": "मुख्यमंत्री शाश्वत कृषी सिंचन योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Irrigation",
+    "icon": "water",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "Chief Minister Sustainable Agriculture Irrigation Scheme is listed on the official MahaDBT Farmer schemes page. The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A62CEFB7856E29C24",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: मुख्यमंत्री शाश्वत कृषी सिंचन योजना.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "chief-minister-sustainable-agriculture-farm-pond",
+    "name": "Chief Minister Sustainable Agriculture Irrigation Scheme — Individual Farm Pond",
+    "name_mr": "मुख्यमंत्री शाश्वत कृषी सिंचन योजना - वैयक्तीक शेततळे",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Irrigation",
+    "icon": "water",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "Chief Minister Sustainable Agriculture Irrigation Scheme — Individual Farm Pond is listed on the official MahaDBT Farmer schemes page. The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AB73A8DEE20C41691",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: मुख्यमंत्री शाश्वत कृषी सिंचन योजना - वैयक्तीक शेततळे.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "rkvy-plastic-lining-farm-pond",
+    "name": "RKVY — Plastic Lining to Farm Pond",
+    "name_mr": "RKVY Plastic Lining to Farm Pond",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Irrigation",
+    "icon": "water",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "RKVY — Plastic Lining to Farm Pond is listed on the official MahaDBT Farmer schemes page. The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AD61F6F45B7D0D582",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: RKVY Plastic Lining to Farm Pond.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "dr-shyamaprasad-mukherjee-jan-van-vikas",
+    "name": "Dr. Shyamaprasad Mukherjee Jan Van Vikas Yojana",
+    "name_mr": "डॉ. श्यामाप्रसाद मुखर्जी जन वन विकास योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Natural resources / agriculture",
+    "icon": "leaf",
+    "need": "crop_protection",
+    "crop_tags": [],
+    "summary": "The MahaDBT page describes the broader Jan-Van Vikas goals and an individual solar-fence subcomponent intended for selected villages within a stated 2 km buffer of protected/tiger-reserve areas. It refers to pilot villages near Navegaon-Nagzira and Tadoba-Andhari; a current eligible-village list and current Forest Department allocation were not captured.",
+    "benefit_summary": "For the solar-fence subcomponent, the captured English page says the beneficiary bears 25% (₹5,000) and the Forest Department bears 75% (₹15,000), adding “whichever is less.” The cap wording is ambiguous; confirm the benefit PDF/current GR before quoting an amount. This is not a general farmer cash grant.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51ABCB57D16990D3318",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The page describes the broader scheme as supporting sustainable village-resource development, complementary livelihoods and reduced human-wildlife conflict, and refers to a 2 km buffer area around tiger-reserve/protected-area boundaries.",
+      "The solar-fence text refers to pilot villages in the buffer zones of Navegaon-Nagzira and Tadoba-Andhari. It does not provide a current eligible-village list.",
+      "The page states beneficiary contribution 25% (₹5,000) and Forest Department contribution 75% (₹15,000), with “whichever is less” wording. Treat that phrase as ambiguous until the linked benefit schedule/current GR is checked.",
+      "The captured page lists Aadhaar, 7/12 and bank passbook for the solar-fence entry; linked benefit PDF: https://mahadbt.maharashtra.gov.in/Farmer/PDF/SolarFenceBenefitdocs.pdf."
+    ],
+    "document_items": [
+      {
+        "id": "aadhaar_card",
+        "label": "Aadhaar card (listed on the official page; do not share its number or a copy with Scheme Mitra)",
+        "stage": "Confirm current solar-fence component requirements",
+        "required": true
+      },
+      {
+        "id": "land_7_12",
+        "label": "7/12 extract",
+        "stage": "Confirm current solar-fence component requirements",
+        "required": true
+      },
+      {
+        "id": "bank_passbook",
+        "label": "Bank passbook (do not share account details with Scheme Mitra)",
+        "stage": "Confirm current process",
+        "required": true
+      }
+    ],
+    "application_process": [
+      "Confirm that the farmer’s village is in the current Forest Department/MahaDBT list and that a current solar-fence allocation is available.",
+      "Check the linked benefit schedule/current Government Resolution to resolve the source page’s contribution/cap wording and current documents.",
+      "Use the official MahaDBT route; Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "For the captured solar-fence entry, MahaDBT lists Aadhaar, 7/12 and bank passbook. The page does not establish a current participating-village list or complete requirements for every Jan-Van component. Confirm with the Forest Department/MahaDBT; do not share identity or account details in Scheme Mitra."
+  },
+  {
+    "slug": "pm-rkvy-rainfed-area-development",
+    "name": "PM-RKVY — Rainfed Area Development (RAD)",
+    "name_mr": "प्रधानमंत्री राष्ट्रीय कृषी विकास योजने अंतर्गत कोरडवाहू क्षेत्र विकास (RAD) योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Farm development",
+    "icon": "sprout",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "MahaDBT’s Maharashtra RAD page describes a cluster-based programme and explicitly gives 2025-26 project-selection criteria: all 34 districts in the plan, two projects per sub-division and at least 20 ha per project/cluster. Project villages are prioritized by rainfed, watershed, natural-farming and related criteria. No 2026-27 call was captured.",
+    "benefit_summary": "The 2025-26 page states up to ₹30,000 per farmer family for included RAD items, with additional convergence; farm size is not a condition for that stated amount. It also gives ₹10,000 per project for capacity building. These are historical 2025-26 terms, not a current-year entitlement.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A1DD809A4CDCCB84A",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_PERIOD_2025_26_CURRENT_WINDOW_UNKNOWN",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The Maharashtra page states the 2025-26 plan covered all 34 districts, selected two projects per sub-division, and required a minimum 20 ha project/cluster. It prioritizes villages with high rainfed share, watershed projects, natural-farming clusters and other named development priorities.",
+      "The same 2025-26 page states maximum ₹30,000 per farmer family for included items, additional convergence, no farm-size cap for that stated assistance, and ₹10,000 per project for capacity-building/HR.",
+      "The page requires a farmer ID in Agristack and an Aadhaar-linked bank account, willingness to move from the prevailing crop pattern to integrated farming, and category-proportion selection with priority to women/disabled farmers; a valid SC/ST certificate is mentioned where applicable. Do not use these 2025-26 statements as 2026-27 rules.",
+      "Included model asks for at least two integrated farming activities; the page lists crop/tree/livestock combinations and allied options such as silage, fish, beekeeping, vermicompost/organic inputs/green manure. Exact current component eligibility needs review.",
+      "Official MahaDBT detail page: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A1DD809A4CDCCB84A ; linked guideline: https://mahadbt.maharashtra.gov.in/Farmer/PDF/PMRKVYRainfedAreaDevelopment.pdf."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Confirm a current-year cluster/project selection and district action plan; the captured eligibility and benefits are for 2025-26 only.",
+      "The page describes cluster-based projects, integrated farming activities and convergence. Ask the district Agriculture Department which components and farmer application steps are active.",
+      "Scheme Mitra does not submit applications or validate Farmer ID/bank details."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "The 2025-26 page names Agristack Farmer ID, Aadhaar-linked bank account and conditional category proof, but does not provide a complete current application-document checklist. Current 2026-27 rules are unknown. Do not share Aadhaar, bank or Farmer ID details in Scheme Mitra; confirm with the current district notice."
+  },
+  {
+    "slug": "gopinath-munde-farmer-accident-safety",
+    "name": "Gopinath Munde Shetkari Apghat Suraksha Sanugraha Yojana",
+    "name_mr": "गोपीनाथ मुंडे शेतकरी अपघात सुरक्षा सानुग्रह अनुदान योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Farmer welfare",
+    "icon": "leaf",
+    "need": "crop_protection",
+    "crop_tags": [],
+    "summary": "The MahaDBT page describes ex-gratia assistance for listed accidental death/disability events affecting an agricultural landholder farmer or one qualifying family member. It lists ₹2 lakh for death, loss of both eyes/two limbs, or one eye plus one limb; ₹1 lakh for loss of one eye or one limb. Current GR, exclusions and claim deadlines require review.",
+    "benefit_summary": "Page-captured schedule: ₹2 lakh or ₹1 lakh according to the stated incident/injury category. This is not a guarantee of claim acceptance; confirm current definitions, exclusions, time limits and evidence with the current GR.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A41E9076B9F87E641",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_CURRENT_GR_AND_CLAIM_TIMING_PENDING",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "MahaDBT page lists accidental death; loss of both eyes/two limbs; one eye plus one limb (₹2 lakh); and loss of one eye or one limb (₹1 lakh).",
+      "The page lists events including road/rail accidents, drowning, poisoning, electric shock/lightning, murder, falls, snake/scorpion bites, animal incidents and other stated accidents. Verify current event definitions/exclusions against the current Government Resolution.",
+      "The page describes landholder farmers identified by Agriculture Census plus one family member among parents, spouse, son or unmarried daughter; total two persons aged 10–75. It lists legal-heir categories. These page terms require current-GR review.",
+      "Claim-page items include 7/12, death certificate, approved village Form 6-C heir record, age/identity evidence (school-leaving/Aadhaar/voter ID or other accepted proof), and FIR/spot panchnama/Police Patil report as relevant to the case.",
+      "Linked GR: https://mahadbt.maharashtra.gov.in/Farmer/PDF/GopinathMundeSchemeGR.pdf."
+    ],
+    "document_items": [],
+    "application_process": [
+      "For a claim, check the current Government Resolution, incident window, eligibility and claim deadline; the page-captured amount is not a claim approval.",
+      "Confirm the exact claim form and case-specific evidence with the Agriculture Department/MahaDBT before filing.",
+      "Submit only through the official channel. Scheme Mitra does not file an insurance or ex-gratia claim."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "The page lists 7/12, death certificate, Form 6-C legal-heir entry, age/identity proof and FIR/spot panchnama/Police Patil report as claim evidence. Which items apply depends on incident and claimant; this is not a universal checklist. Confirm current GR, deadline and formats. Do not upload identity or claim files to Scheme Mitra."
+  },
+  {
+    "slug": "cashew-sapling-distribution",
+    "name": "Cashew Graft Distribution Scheme",
+    "name_mr": "काजू कलम वाटप योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Horticulture",
+    "icon": "leaf",
+    "need": "horticulture",
+    "crop_tags": [],
+    "summary": "Cashew Graft Distribution Scheme is listed on the official MahaDBT Farmer schemes page. The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms. Current benefit, eligibility, documents, steps and availability remain unknown; no terms are inferred.",
+    "benefit_summary": "Not captured from usable scheme-specific official content. No benefit is inferred; confirm the current component and Government Resolution with the department.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51AA76CB4993576E544",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_index_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F",
+    "source_capture_level": "OFFICIAL_DETAIL_PAGE_FETCHED_NO_USABLE_TERMS_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_PAGE_INCOMPLETE_UNVERIFIED",
+    "source_facts": [
+      "The official MahaDBT Farmer schemes index captured on 2026-10-08 lists this scheme: काजू कलम वाटप योजना.",
+      "The detailed source page, current eligibility, component rules, benefit schedule, documents, application steps, and application window have not been independently transcribed or reviewed.",
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "The captured page showed the shared MahaDBT index/portal notice but no scheme-specific terms.",
+      "Official MahaDBT scheme index: https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A64CDF3CE7D352F8F"
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use MahaDBT to identify the current component and check whether applications are open. The shared notice captured 2026-10-08 said the portal would soon reopen; current availability is unknown.",
+      "Confirm current benefits, eligibility, documents and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Detailed scheme rules and component requirements are not yet captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "name_mr_official": true,
+    "documents_review_complete": false,
+    "document_review_note": "No complete component-specific document list was captured. Empty checklist is not confirmation that no documents are required. Confirm the current official requirements; do not share files or identity numbers with Scheme Mitra."
+  },
+  {
+    "slug": "pm-kisan-samman-nidhi",
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "department": "Department of Agriculture and Farmers Welfare, Government of India",
+    "level": "Central — applies across India, including Maharashtra",
+    "category": "Income support",
+    "need": "income_support",
+    "icon": "leaf",
+    "source_name": "Department of Agriculture & Farmers Welfare, Government of India — PM-KISAN portal",
+    "source_url": "https://pmkisan.gov.in/",
+    "application_url": "https://pmkisan.gov.in/RegistrationFormupdated.aspx",
+    "source_capture_level": "OFFICIAL_PORTAL_PAGE_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "The live PM-KISAN portal states that eligible landholding farmer families receive ₹6,000 per year in three instalments, subject to exclusions and State verification. The portal says e-KYC is mandatory for registered farmers. The Government, not Scheme Mitra, determines eligibility and release.",
+    "benefit_summary": "₹6,000 per eligible farmer family per year in three equal instalments, subject to scheme exclusions, e-KYC and government verification. Not every landholder is eligible.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Official portal directly captured 2026-10-08 states the scheme provides ₹6,000 per eligible farmer family per year in three equal instalments and is fully funded by the Government of India.",
+      "The official portal defines the family as husband, wife and minor children; State/UT administrations identify beneficiaries.",
+      "The portal lists institutional landholders and specified higher-economic-status categories among exclusions; this record does not reproduce the complete exclusion list.",
+      "The official portal says e-KYC is mandatory for registered farmers. Do not collect Aadhaar or bank credentials in Scheme Mitra. Official portal: https://pmkisan.gov.in/ ; FAQ: https://pmkisan.gov.in/Documents/RevisedFAQ.pdf."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Use the official New Farmer Registration page and check status on PM-KISAN.",
+      "Complete identity or bank steps only on the Government portal/authorized channel. Scheme Mitra does not collect Aadhaar, bank data or submit applications.",
+      "State/UT administration identifies and verifies eligible families under the current guidelines."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "The portal states e-KYC is mandatory, but a complete case-specific registration checklist was not captured. Complete identity, bank and land-record steps only through official Government channels; do not send Aadhaar, bank details or files to Scheme Mitra."
+  },
+  {
+    "slug": "pradhan-mantri-fasal-bima-yojana",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "department": "Department of Agriculture and Farmers Welfare, Government of India",
+    "level": "Central — applies across India, including Maharashtra",
+    "category": "Crop insurance",
+    "need": "crop_protection",
+    "icon": "sprout",
+    "source_name": "Ministry of Agriculture & Farmers Welfare / National Crop Insurance Portal",
+    "source_url": "https://pmfby.gov.in/",
+    "application_url": "https://pmfby.gov.in/",
+    "source_capture_level": "OFFICIAL_PORTAL_AND_2026_PIB_SEARCH_RESULT_PENDING_DIRECT_RECHECK",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "PMFBY is crop-loss insurance for crops and areas notified by the State for a particular season. An official PIB result from August 2026 says the scheme was being implemented in 25 States/UTs in Kharif 2026. Maharashtra’s current notified crops, area, insurer, premium and deadlines must be checked in the State season notification.",
+    "benefit_summary": "Insurance cover and farmer premium depend on notified crop, area, season and sum insured. The 2026 PIB result states maximum farmer premium shares of 2% (Kharif food/oilseed), 1.5% (Rabi food/oilseed) and 5% (annual commercial/horticultural); do not apply without the current Maharashtra notification.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_SEARCH_RESULT_CAPTURE_UNVERIFIED_MAHARASHTRA_SEASON_PENDING",
+    "source_facts": [
+      "PMFBY is notification-driven; the current Maharashtra crop/area list was not captured.",
+      "PIB release PRID 2304549 (August 2026) search-result capture reports 25 States/UTs in Kharif 2026 and premium caps of 2%, 1.5% and 5% for the stated crop seasons/categories. Direct fetch failed; re-open before human verification: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304549&reg=48&lang=2.",
+      "Maharashtra’s 2025-26 PMFBY choice is not evidence of 2026-27 enrollment terms: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2199678&reg=48&lang=2.",
+      "Official portal: https://pmfby.gov.in/."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Check the current Maharashtra season notification for crop, insurance unit, insurer, farmer share and deadline.",
+      "Use the State-notified PMFBY/NCIP, bank, CSC or insurer route for that season. This record does not establish a current Kharif/Rabi 2026-27 application window.",
+      "Scheme Mitra does not enroll farmers, collect premiums or decide claims."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "No complete 2026-27 Maharashtra application checklist was captured. Documents and enrollment channels are season-specific; an empty list does not mean no documents are required. Confirm on the State notification/PMFBY portal; do not send files or account details to Scheme Mitra."
+  },
+  {
+    "slug": "kisan-credit-card",
+    "name": "Kisan Credit Card (KCC) Scheme",
+    "department": "Department of Agriculture and Farmers Welfare, Government of India",
+    "level": "Central — delivered through participating banks across India",
+    "category": "Agricultural credit",
+    "need": "income_support",
+    "icon": "leaf",
+    "source_name": "Reserve Bank of India — KCC Directions, 2026; PM-KISAN KCC form",
+    "source_url": "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13522&Mode=0",
+    "application_url": "https://pmkisan.gov.in/Documents/Kcc.pdf",
+    "source_capture_level": "OFFICIAL_RBI_DIRECTION_CAPTURED_FUTURE_EFFECTIVE_PENDING_HUMAN_REVIEW",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "KCC is bank-administered revolving credit for crop cultivation and specified allied activities. RBI’s Directions dated 19 June 2026 apply to loans sanctioned on or after 1 January 2027; do not apply them to earlier loans. Current bank terms, local Scale of Finance and any interest-subvention rules must be checked separately.",
+    "benefit_summary": "Credit limit, interest, collateral and repayment depend on the bank, crop/area, State Scale of Finance and rules in force on the sanction date. RBI’s 2026 Directions do not guarantee a grant or fixed loan.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_FUTURE_EFFECTIVE_FROM_2027",
+    "source_facts": [
+      "RBI KCC Directions dated 2026-06-19 become applicable to loans sanctioned on or after 2027-01-01.",
+      "The Directions cover owner cultivators and identify tenant farmers, oral lessees, sharecroppers and qualifying SHGs/JLGs; allied activity is subject to bank assessment.",
+      "RBI describes crop limits based on State/District Scale of Finance and a marginal-farmer Flexi-KCC range; no fixed amount is guaranteed.",
+      "Fresh-loan documentation includes land record/tenancy/equivalent certificate as per bank policy. Sharecroppers/oral lessees may use local administration/PRI certification; in specified cases an affidavit is accepted for loans up to ₹50,000. Banks decide current requirements and charges.",
+      "The Directions say banks decide collateral/margin above ₹2 lakh; specified crop-loan tie-ups may waive collateral up to ₹3 lakh. This does not guarantee unsecured credit.",
+      "Official RBI Directions: https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=13522&Mode=0 ; PM-KISAN KCC form: https://pmkisan.gov.in/Documents/Kcc.pdf."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Ask a bank or authorized lender about a fresh KCC, renewal or limit and current local Scale of Finance.",
+      "The linked PM-KISAN KCC PDF is an application-form lead, not a complete current bank checklist. The bank conducts underwriting.",
+      "RBI’s 2026 Directions apply to loans sanctioned from 2027-01-01; confirm which rules apply to the loan date. Scheme Mitra does not arrange credit or submit forms."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "RBI’s future-effective Directions mention land/tenancy/equivalent evidence, but the bank’s current checklist and sanction-date rules control. The KCC form is not a full checklist. Confirm with the bank; do not share account numbers or files in Scheme Mitra."
+  },
+  {
+    "slug": "pradhan-mantri-kisan-maandhan",
+    "name": "Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)",
+    "department": "Ministry of Labour and Employment, Government of India",
+    "level": "Central — applies across India, including Maharashtra",
+    "category": "Pension / social security",
+    "need": "income_support",
+    "icon": "leaf",
+    "source_name": "MAANDHAN portal — Government of India",
+    "source_url": "https://maandhan.in/scheme/pmkmy",
+    "application_url": "https://maandhan.in/scheme/pmkmy",
+    "source_capture_level": "OFFICIAL_SOURCE_SEARCH_RESULT_ONLY_DIRECT_FETCH_FAILED_PENDING_RECHECK",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "The official MAANDHAN page search result describes a voluntary contributory pension for small and marginal farmers aged 18–40 with cultivable land up to 2 ha in records as of 1 August 2019. It states ₹3,000/month from age 60 and 50% spouse family pension. Direct page retrieval failed during capture; current enrollment terms must be rechecked.",
+    "benefit_summary": "Indexed official terms state ₹3,000/month from age 60, monthly contributions of ₹55–₹200 based on entry age and matching Government contributions. This is contributory, not a free pension; confirm current status at an authorized CSC.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_SEARCH_RESULT_CAPTURE_UNVERIFIED_CURRENT_ENROLLMENT_UNKNOWN",
+    "source_facts": [
+      "Official MAANDHAN indexed page captured 2026-10-08: entry age 18–40; small/marginal farmer with cultivable land up to 2 ha per State/UT records as of 01-08-2019.",
+      "Indexed page states voluntary monthly contributions ₹55–₹200 by entry age, matching Government contributions, ₹3,000 minimum pension/month from age 60 and 50% spouse family pension.",
+      "Indexed page lists Aadhaar and savings-bank/PM-KISAN account; CSC enrollment. Current enrollment availability not established.",
+      "Direct fetch of https://maandhan.in/scheme/pmkmy returned HTTP 500; re-open official page before independent verification."
+    ],
+    "document_items": [
+      {
+        "id": "aadhaar_card",
+        "label": "Aadhaar card (official page prerequisite for CSC enrollment; do not share its number or copy with Scheme Mitra)",
+        "stage": "Authorized CSC only; verify current rules",
+        "required": true
+      },
+      {
+        "id": "bank_account_proof",
+        "label": "Savings-bank account / PM-KISAN account (official page prerequisite)",
+        "stage": "Authorized CSC only; do not share account details with Scheme Mitra",
+        "required": true
+      }
+    ],
+    "application_process": [
+      "The indexed official page directs eligible farmers to enroll at a nearby CSC; current enrollment availability was not confirmed.",
+      "The indexed page lists Aadhaar and a savings-bank/PM-KISAN account. Complete identity and bank steps only at the official CSC/MAANDHAN route; Scheme Mitra does not collect them.",
+      "Check current MAANDHAN rules and contribution terms before enrolling."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "The indexed page lists Aadhaar and a savings-bank/PM-KISAN account as CSC enrollment prerequisites, but the direct page returned HTTP 500. Recheck current requirements at MAANDHAN/CSC. Scheme Mitra must not collect Aadhaar, bank details or files."
+  },
+  {
+    "slug": "pm-kusum",
+    "name": "Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM-KUSUM)",
+    "department": "Ministry of New and Renewable Energy, Government of India",
+    "level": "Central scheme implemented through state nodal agencies",
+    "category": "Solar energy / irrigation",
+    "need": "irrigation",
+    "icon": "water",
+    "source_name": "Ministry of New and Renewable Energy, Government of India",
+    "source_url": "https://mnre.gov.in/en/pradhan-mantri-kisan-urja-suraksha-evam-utthaan-mahabhiyaan-pm-kusum/",
+    "application_url": "",
+    "source_capture_level": "OFFICIAL_MNRE_PAGE_SEARCH_RESULT_CAPTURE_PERIOD_ENDED_FRESH_ENROLLMENT_UNCONFIRMED",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "MNRE’s scheme page lists PM-KUSUM’s period through 31 March 2026. Timeline notices for existing projects do not prove new farmer applications are open after that date. Current extension, Maharashtra component and fresh enrollment window remain unknown.",
+    "benefit_summary": "The official page describes earlier component-based support for solar pumps/pump solarization and decentralized solar plants, with shares varying by component/State. No current benefit or open application window after 2026-03-31 is asserted.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_SOURCE_PERIOD_ENDED_2026_03_31_CURRENT_ENROLLMENT_UNKNOWN",
+    "source_facts": [
+      "MNRE page search result states original PM-KUSUM period was till 2026-03-31. Current Maharashtra fresh enrollment was not established.",
+      "MNRE search results include 2026 timeline notices for existing projects; these do not establish a new application window.",
+      "Official MNRE page: https://mnre.gov.in/en/pradhan-mantri-kisan-urja-suraksha-evam-utthaan-mahabhiyaan-pm-kusum/ ; scheme portal: https://pmkusum.mnre.gov.in/."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Do not start a new application on historical terms. Check for a current MNRE extension and Maharashtra State Implementing Agency notice.",
+      "Notices about project completion/financial closure may apply only to already-sanctioned projects.",
+      "No confirmed current Maharashtra farmer application route was captured as of 2026-10-08."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "No current 2026-27 Maharashtra checklist was captured, and the original scheme period ended 2026-03-31. Do not infer applications are open or that no documents are required; check the State Implementing Agency."
+  },
+  {
+    "slug": "agriculture-infrastructure-fund",
+    "name": "Agriculture Infrastructure Fund (AIF)",
+    "department": "Department of Agriculture and Farmers Welfare, Government of India",
+    "level": "Central — eligible projects across India, including Maharashtra",
+    "category": "Post-harvest / agri infrastructure",
+    "need": "horticulture",
+    "icon": "sprout",
+    "source_name": "Department of Agriculture & Farmers Welfare — Agriculture Infrastructure Fund portal",
+    "source_url": "https://agriinfra.dac.gov.in/Home/FAQs",
+    "application_url": "https://agriinfra.dac.gov.in/",
+    "source_capture_level": "OFFICIAL_PORTAL_SEARCH_RESULT_CAPTURE_DIRECT_FETCH_FAILED_PENDING_HUMAN_REVIEW",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "The official AIF FAQ result describes medium/long-term debt financing for eligible post-harvest management and community-farming-asset projects. A lender appraises and sanctions the project. The portal states disbursement completes within six years from 2020-21, so new proposal availability in 2026-27 must be confirmed.",
+    "benefit_summary": "Official FAQ result states 3% annual interest subvention on loans up to ₹2 crore per project and credit-guarantee/fee support, subject to eligible project and lender sanction. AIF is not a direct grant.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_SEARCH_RESULT_CAPTURE_UNVERIFIED_FRESH_LOAN_WINDOW_UNKNOWN",
+    "source_facts": [
+      "Official AIF FAQ search result captured 2026-10-08 states 3% interest subvention for loans up to ₹2 crore/project and credit-guarantee support, subject to project eligibility and lender appraisal.",
+      "The official portal result describes operation 2020-21 to 2032-33 and loan disbursement within six years; current acceptance of new proposals after 2025-26 was not confirmed.",
+      "Lending institution appraises, sanctions or rejects and claims eligible benefit to the loan account; it is not a direct cash grant.",
+      "Official FAQ: https://agriinfra.dac.gov.in/Home/FAQs ; portal: https://agriinfra.dac.gov.in/. Direct FAQ fetch returned an access error."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Prepare an eligible project and apply through a participating lender/official AIF portal; the lender appraises and decides sanction.",
+      "The FAQ states lender claims eligible support after disbursement and credits benefit to the loan account.",
+      "Confirm current acceptance of new proposals and current project/entity rules before applying; the portal FAQ could not be directly fetched during capture."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "No complete AIF project-document checklist was captured. Requirements vary by project, borrower and lender; empty checklist does not mean no documents are needed. Confirm with the lender and AIF portal; do not send business, bank or identity files to Scheme Mitra."
+  },
+  {
+    "slug": "namo-shetkari-mahasanman-nidhi",
+    "name": "Namo Shetkari Mahasanman Nidhi Yojana",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Income support",
+    "need": "income_support",
+    "icon": "leaf",
+    "source_name": "Agriculture Department, Government of Maharashtra; Namo Shetkari portal",
+    "source_url": "https://krishi.maharashtra.gov.in/",
+    "application_url": "",
+    "source_capture_level": "OFFICIAL_DEPARTMENT_HOMEPAGE_NAME_ONLY_SCHEME_PORTAL_FETCH_FAILED",
+    "name_mr": "",
+    "crop_tags": [],
+    "summary": "The Maharashtra Agriculture Department homepage shows a Namo Shetkari section/counters; displayed zero values are not scheme statistics. The dedicated portal returned HTTP 500 during capture, so current benefit, eligibility, documents, availability and application route remain unknown.",
+    "benefit_summary": "Not captured from usable scheme-specific official terms. No amount, PM-KISAN linkage condition or payment status is inferred.",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "data_status": "OFFICIAL_SCHEME_NAME_ONLY_TERMS_AND_APPLICATION_ROUTE_UNKNOWN",
+    "source_facts": [
+      "Official Department homepage directly captured 2026-10-08; the Namo Shetkari counters section displayed zero values, which are not reported as participation, payment or impact data.",
+      "Dedicated portal https://nsmny.mahait.org/ returned HTTP 500; current scheme terms and route remain unverified.",
+      "Official department homepage: https://krishi.maharashtra.gov.in/."
+    ],
+    "document_items": [],
+    "application_process": [
+      "Check the current Maharashtra Agriculture Department and Namo Shetkari portal for the latest Government Resolution and application/status route.",
+      "The dedicated portal https://nsmny.mahait.org/ returned HTTP 500 during capture; do not use third-party pages as an application route.",
+      "Scheme Mitra does not submit applications or represent the State Government."
+    ],
+    "checks": [
+      {
+        "id": "source_detail_pending",
+        "label": "Official scheme conditions and application route have not yet been captured",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "documents_review_complete": false,
+    "document_review_note": "No scheme-specific document checklist was captured. Empty checklist is not confirmation that no documents are required. Confirm current requirements on a working official State source; do not share Aadhaar, bank details or files with Scheme Mitra."
+  },
+  {
+    "slug": "dr-babasaheb-ambedkar-krushi-swavalamban",
+    "name": "Dr. Babasaheb Ambedkar Krushi Swavalamban Yojana",
+    "name_mr": "डॉ. बाबासाहेब आंबेडकर कृषी स्वावलंबन योजना",
+    "department": "Agriculture Department, Government of Maharashtra",
+    "level": "State — Maharashtra",
+    "category": "Irrigation / SC and Nav-Buddhist farmer support",
+    "icon": "water",
+    "need": "irrigation",
+    "crop_tags": [],
+    "summary": "The MahaDBT page describes irrigation assistance for Scheduled Caste / Nav-Buddhist farmers, but its eligibility bullets specify the Scheduled Caste category. It lists 7/12/8-A, income ceiling ₹1.5 lakh and landholding 0.20–6 ha (0.40 ha minimum for a new well), plus district exclusions. Component rules and documents differ; confirm the current GR.",
+    "benefit_summary": "The page lists caps: new well ₹2.50 lakh; repair ₹50,000; in-well boring ₹20,000; pump ₹20,000; electricity connection ₹10,000; farm-pond lining ₹1 lakh; drip ₹50,000/sprinkler ₹25,000; PVC pipe ₹30,000; kitchen garden ₹500. Page-captured amounts are not guaranteed current rates.",
+    "source_name": "MahaDBT Farmer Portal",
+    "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/Login",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_DETAIL_CAPTURED_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_DETAIL_CAPTURE_UNVERIFIED_COMPONENT_AND_CURRENT_GR_REVIEW_PENDING",
+    "source_facts": [
+      "MahaDBT shared Farmer portal notice captured 2026-10-08 says the portal will soon reopen and that applications from 2025-26 use first-come-first-served processing. This notice does not establish that a particular scheme is open on the capture date or confirm a scheme-specific window.",
+      "MahaDBT page describes support for Scheduled Caste/Nav-Buddhist farmers; its eligibility text says Scheduled Caste category and a valid caste certificate are mandatory. It lists 7/12 and 8-A, annual income up to ₹1.5 lakh, and landholding 0.20–6 ha (new-well minimum 0.40 ha).",
+      "The page lists component caps: new well ₹2.50 lakh; old-well repair ₹50,000; in-well boring ₹20,000; pump set ₹20,000; electricity connection ₹10,000; farm-pond lining ₹1 lakh; drip ₹50,000/sprinkler ₹25,000; PVC pipe ₹30,000; kitchen garden ₹500.",
+      "The page excludes Mumbai, Sindhudurg, Ratnagiri, Satara, Sangli and Kolhapur. New-well and other component document bundles include separate income, land, technical, inspection and Gram Sabha requirements; check the exact selected component.",
+      "Linked GR: https://mahadbt.maharashtra.gov.in/Farmer/PDF/Scheme-DrBabasahebAmbedkarKrushiSwavalambanYojana.pdf."
+    ],
+    "application_process": [
+      "Check the current MahaDBT portal status and exact scheme component/window before applying; the captured shared notice said it would soon reopen, so current availability is not confirmed.",
+      "Select the exact component and current application window on MahaDBT; the official source page lists distinct components and conditions.",
+      "Confirm current component amounts, documents, district eligibility and application steps with the Agriculture Department before acting. Scheme Mitra does not submit applications."
+    ],
+    "document_items": [
+      {
+        "id": "land_7_12",
+        "label": "7/12 extract",
+        "stage": "Official page lists as a scheme requirement; component-specific use to be verified",
+        "required": true
+      },
+      {
+        "id": "land_8a",
+        "label": "8-A extract",
+        "stage": "Official page lists as a scheme requirement; component-specific use to be verified",
+        "required": true
+      },
+      {
+        "id": "caste_certificate",
+        "label": "Valid Scheduled Caste certificate",
+        "stage": "If applying under the stated beneficiary group; verify current component rules",
+        "required": true
+      },
+      {
+        "id": "income_certificate",
+        "label": "Annual income certificate (page states up to ₹1,50,000)",
+        "stage": "Official page lists; verify current period/limit",
+        "required": true
+      }
+    ],
+    "checks": [
+      {
+        "id": "social_category",
+        "label": "Scheduled Caste / Nav-Buddhist beneficiary group (source wording requires review)",
+        "field": "social_category",
+        "kind": "unknown"
+      },
+      {
+        "id": "district_exclusions",
+        "label": "District exclusions listed on source page",
+        "field": "district",
+        "kind": "unknown"
+      },
+      {
+        "id": "land_range",
+        "label": "Component-specific landholding range and new-well minimum",
+        "field": "land_area_acres",
+        "kind": "unknown"
+      },
+      {
+        "id": "income_limit",
+        "label": "Annual household income criterion",
+        "field": "annual_income_inr",
+        "kind": "unknown"
+      },
+      {
+        "id": "selected_component",
+        "label": "Selected component-specific rules and benefit schedule",
+        "field": "selected_component",
+        "kind": "unknown"
+      }
+    ],
+    "eligibility_rules": [
+      {
+        "id": "social_category",
+        "label": "Intended group: Scheduled Caste / Nav-Buddhist farmers",
+        "field": "social_category",
+        "operator": "in",
+        "values": [
+          "sc",
+          "nav_buddhist"
+        ],
+        "impact": "eligibility",
+        "source_fact": "The scheme page names Scheduled Caste / Nav-Buddhist farmers as the intended group; separate profile options are used and the wording requires reviewer verification.",
+        "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF"
+      },
+      {
+        "id": "excluded_district",
+        "label": "Not one of the districts listed as excluded on the page",
+        "field": "district",
+        "operator": "not_in",
+        "values": [
+          "mumbai",
+          "sindhudurg",
+          "ratnagiri",
+          "satara",
+          "sangli",
+          "kolhapur"
+        ],
+        "impact": "eligibility",
+        "source_fact": "The official page lists Mumbai, Sindhudurg, Ratnagiri, Satara, Sangli and Kolhapur as excluded districts. Verify current district list.",
+        "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF"
+      },
+      {
+        "id": "income_cap",
+        "label": "Annual income limit stated on source page",
+        "field": "annual_income_inr",
+        "operator": "lte",
+        "value": 150000,
+        "impact": "eligibility",
+        "source_fact": "Official page states annual income up to ₹1,50,000. Verify current year and component application.",
+        "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF"
+      },
+      {
+        "id": "minimum_landholding",
+        "label": "Minimum landholding for the selected component",
+        "field": "land_area_acres",
+        "operator": "gte",
+        "value": 0.494211,
+        "impact": "review",
+        "source_fact": "The page states 0.20 ha minimum generally and 0.40 ha for the new-well component; this generic conversion is not component-specific.",
+        "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF"
+      },
+      {
+        "id": "maximum_landholding",
+        "label": "Maximum landholding stated on source page",
+        "field": "land_area_acres",
+        "operator": "lte",
+        "value": 14.8263,
+        "impact": "eligibility",
+        "source_fact": "Official page states a landholding limit up to 6 ha; confirm the family/plot/component basis.",
+        "source_url": "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData?str=E9DDFA703C38E51A986837A04E50D9EF"
+      }
+    ],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "rule_notes": "Provisional machine-readable transcription of an official page; not approved for eligibility decisions. Income field is not collected in v1. The district/group/component and current-GR details require human review.",
+    "documents_review_complete": false,
+    "document_review_note": "The page gives a separate list for new wells and another for well repair/in-well boring and pond lining/electricity/pump/micro-irrigation. It mentions caste and income proof, land records, affidavits, land/water attestations, inspection/recommendation, site photos and Gram Sabha documents depending on the component. The short checklist below is not complete for all components; confirm the current GR. Do not upload files or share identity numbers in Scheme Mitra."
+  },
+  {
+    "slug": "national-mission-edible-oils-oilseeds",
+    "name": "National Mission on Edible Oils – Oilseeds (NMEO-OS)",
+    "name_mr": "",
+    "department": "Department of Agriculture & Farmers Welfare, Government of India",
+    "level": "Central — Maharashtra cluster/location applicability requires confirmation",
+    "category": "Oilseeds / seeds / market linkages",
+    "icon": "seed",
+    "need": "oilseeds",
+    "crop_tags": [
+      "groundnut",
+      "soybean",
+      "mustard",
+      "sunflower",
+      "sesame",
+      "safflower",
+      "niger",
+      "linseed",
+      "castor"
+    ],
+    "summary": "Official PIB material describes a seven-year, cluster-based mission (2024-25 to 2030-31) to improve oilseed productivity, seed access and market/post-harvest links. A 2026 PIB result reports national cluster and seed/training support, but the current Maharashtra district/cluster and allocation must be confirmed before matching an individual farmer.",
+    "benefit_summary": "Within a current identified cluster, source material describes quality seed, training and advisory; infrastructure support is project-based. No universal individual grant or direct application route is established.",
+    "source_name": "Ministry of Agriculture & Farmers Welfare / Press Information Bureau",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296205&reg=48&lang=1",
+    "application_url": "",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_PIB_SEARCH_RESULT_CAPTURE_DIRECT_FETCH_FAILED_MAHARASHTRA_CLUSTER_LIST_PENDING",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "PIB release PRID 2296205 (7 August 2026) search-result capture describes a cluster-based mission, 600+ operational value-chain clusters nationally, and seed/training/advisory support. Direct fetch failed; re-open before verification.",
+      "Official PIB backgrounder describes NMEO-OS for 2024-25 to 2030-31 with ₹10,103 crore outlay: https://www.pib.gov.in/PressNoteDetails.aspx?NoteId=156376&ModuleId=3&reg=3&lang=2.",
+      "This is cluster-based; no Maharashtra district/cluster or 2026-27 allocation was established in this record. Confirm with current State action plan.",
+      "Official recent release: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296205&reg=48&lang=1."
+    ],
+    "document_items": [],
+    "document_review_note": "No complete component-specific document list was captured. Cluster selection and crop/variety may require separate records. Empty checklist does not mean no documents are required; confirm with the current district implementing agency.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Ask the district Agriculture Department/KVK or an identified value-chain partner/FPO whether the farmer’s village and crop are in an active NMEO-OS cluster.",
+      "Confirm current season allocation, seed/extension component and official process from the State action plan.",
+      "No individual application URL was established; Scheme Mitra does not enroll farmers."
+    ]
+  },
+  {
+    "slug": "mission-aatmanirbharta-pulses",
+    "name": "Mission for Aatmanirbharta in Pulses (Dalhan Aatmanirbharta Mission)",
+    "name_mr": "",
+    "department": "Department of Agriculture & Farmers Welfare, Government of India",
+    "level": "Central — Maharashtra focus districts and season require confirmation",
+    "category": "Pulses / seeds / procurement",
+    "icon": "seed",
+    "need": "pulses",
+    "crop_tags": [
+      "tur",
+      "arhar",
+      "urad",
+      "masoor",
+      "pulses"
+    ],
+    "summary": "The mission runs 2025-26 to 2030-31. PIB material describes seed kits, demonstrations and procurement mechanisms for Tur, Urad and Masoor through NAFED/NCCF in participating states. A March 2026 release identifies 489 focus districts nationally; Maharashtra district/season terms and current registration windows must be checked.",
+    "benefit_summary": "Support is crop-, cluster- and season-specific. Procurement through NAFED/NCCF requires a current participating-State window and farmer registration/agreement; it is not guaranteed procurement for all pulse farmers.",
+    "source_name": "Ministry of Agriculture & Farmers Welfare / Press Information Bureau",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2241411&reg=3&lang=1",
+    "application_url": "",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_PIB_SEARCH_RESULT_CAPTURE_DISTRICT_LIST_DIRECT_FETCH_FAILED_PENDING_RECHECK",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Cabinet release PRID 2173547 describes a six-year mission (2025-26 to 2030-31), ₹11,440 crore outlay, seed kits and procurement of Tur, Urad and Masoor in participating states from farmers registering with NAFED/NCCF and entering agreements: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2173547&reg=3&lang=2.",
+      "PIB release PRID 2241411 (17 March 2026) search-result capture states 489 national focus districts and refers to district annexures. Direct fetch failed; Maharashtra district list/allocation was not extracted.",
+      "Seed-kit distribution and procurement are State-, district-, crop- and season-specific; do not promise a seed kit or procurement without the current Maharashtra notice.",
+      "Official recent PIB source: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2241411&reg=3&lang=1."
+    ],
+    "document_items": [],
+    "document_review_note": "No complete Maharashtra checklist for seed kits or procurement was captured. Requirements differ by component and season; an empty list is not confirmation that no documents are required.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check current Maharashtra focus-district/cluster and seed-kit plans with the district Agriculture Department/KVK.",
+      "For procurement, confirm the active crop-season window and registration/contract process directly with NAFED/NCCF.",
+      "No current Maharashtra individual application form was verified."
+    ]
+  },
+  {
+    "slug": "pm-dhan-dhaanya-krishi-yojana",
+    "name": "Prime Minister Dhan-Dhaanya Krishi Yojana (PM-DDKY)",
+    "name_mr": "",
+    "department": "Department of Agriculture & Farmers Welfare, Government of India, with State Governments",
+    "level": "Central/state convergence — selected districts only",
+    "category": "District agriculture development / convergence",
+    "icon": "leaf",
+    "need": "district-development",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "The programme runs for six years from 2025-26 and covers 100 selected low-productivity/low-cropping-intensity/low-credit districts through convergence of Central and State schemes and district plans. PIB says every State has at least one selected district, but this record does not identify Maharashtra’s selected district or local interventions.",
+    "benefit_summary": "PM-DDKY is a district-level convergence programme, not one universal cash grant. A farmer may benefit only through an underlying scheme/component in the approved district plan and must meet that scheme’s rules.",
+    "source_name": "Ministry of Agriculture & Farmers Welfare / Press Information Bureau",
+    "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244624&reg=3&lang=2",
+    "application_url": "",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_PIB_SEARCH_RESULT_CAPTURE_DISTRICT_PLAN_PENDING_DIRECT_RECHECK",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Cabinet approval PRID 2145147 states six years from 2025-26, 100 districts, convergence of 36 schemes across 11 departments, and at least one selected district per State: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2145147.",
+      "PIB release PRID 2244624 (24 March 2026) search-result capture states the 100 districts were identified and district committees prepare Agriculture and Allied Activities Plans. Direct fetch failed; Maharashtra district and plan details were not extracted.",
+      "No stand-alone farmer benefit or application checklist is established by the general announcement; eligibility depends on the local plan and underlying scheme.",
+      "Official 2026 source: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244624&reg=3&lang=2."
+    ],
+    "document_items": [],
+    "document_review_note": "No stand-alone PM-DDKY document list was captured. Requirements come from the district plan and the underlying scheme; empty checklist does not mean no documents are required.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Confirm the farmer’s district is selected and obtain the approved district Agriculture and Allied Activities Plan.",
+      "For a specific subsidy or service, use the underlying scheme’s own official terms and application route.",
+      "No stand-alone farmer registration route was captured."
+    ]
+  },
+  {
+    "slug": "formation-promotion-10000-fpo",
+    "name": "Central Sector Scheme for Formation and Promotion of 10,000 Farmer Producer Organizations (FPOs)",
+    "name_mr": "",
+    "department": "Department of Agriculture & Farmers Welfare / Small Farmers’ Agri-Business Consortium (SFAC)",
+    "level": "Central — FPO/group-level support",
+    "category": "Farmer Producer Organization / collective enterprise",
+    "icon": "group",
+    "need": "farmer-groups",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "SFAC’s official page lists the 10,000-FPO scheme, linked operational guidelines/addenda, CBBO contacts and state-wise FPO lists; the displayed list is dated 24 February 2025. Support is for forming/handholding and financing an FPO, not an individual farmer cash benefit. Current remaining formation/support availability was not established.",
+    "benefit_summary": "SFAC links the scheme’s operational guidelines, which describe FPO formation/handholding, an equity-grant provision and a credit-guarantee facility. Specific current grant amounts, eligibility and remaining cohort availability are not established in this record. Any scheme support is at FPO level, not a direct individual cash benefit.",
+    "source_name": "Small Farmers’ Agri-Business Consortium (SFAC), Government of India",
+    "source_url": "https://sfacindia.com/FPOS.aspx",
+    "application_url": "https://sfacindia.com/FPOS.aspx",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_SFAC_PAGE_AND_OPERATIONAL_GUIDELINE_PARTIALLY_CAPTURED_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "SFAC’s official FPO page directly captured 2026-10-08 links the 10,000-FPO scheme, forms/documents, empanelled CBBOs, operational guidelines, addenda and state-wise FPO lists dated 24-02-2025: https://sfacindia.com/FPOS.aspx.",
+      "The linked operational guidelines are dated 2020-07-07. The captured sections say an eligible FPO in plains has at least 300 farmer-members; specified North-Eastern/hilly areas (including areas at 1,000 m or above MSL) have a 100-member minimum. They describe produce-cluster formation and up to five years of handholding: https://sfacindia.com/UploadFile/Statistics/Formation%20&%20Promotion%20of%2010,000%20FPOs%20Scheme%20Operational%20Guidelines%20in%20English.pdf.",
+      "The guidelines include separate equity-grant and credit-guarantee sections and the SFAC page lists an addendum; the full current financial terms and any later revisions were not completely transcribed. Do not use historic limits as current without reviewing all amendments.",
+      "Current formation/cohort completion, state allocation, current implementing agency and remaining support availability in 2026 were not established. The linked state-wise list is dated 24-02-2025."
+    ],
+    "document_items": [],
+    "document_review_note": "No complete current FPO formation/equity-grant checklist was transcribed. The linked 2020 guidelines describe legal form, member thresholds, cluster formation, business planning and organizational records; an addendum is also linked. Confirm the current forms and amendments with SFAC/CBBO before applying. Empty checklist does not mean no documents are required.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "An individual farmer does not apply for an FPO-level grant; contact an existing FPO or an SFAC/empanelled CBBO about joining or forming an eligible producer organization.",
+      "The FPO/CBBO must confirm current cohort availability, membership, business plan and finance route under current guidelines.",
+      "Scheme Mitra does not register an FPO or arrange finance."
+    ]
+  },
+  {
+    "slug": "national-mission-natural-farming",
+    "name": "National Mission on Natural Farming (NMNF)",
+    "name_mr": "",
+    "department": "Department of Agriculture & Farmers Welfare, Government of India; Maharashtra Agriculture Department",
+    "level": "Central/state — Maharashtra cluster and enrollment unknown",
+    "category": "Natural farming / extension",
+    "icon": "leaf",
+    "need": "natural-farming",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "Maharashtra Agriculture Department’s guidelines index lists a 2024-25 NMNF guideline. This proves a state guideline was published for that period only; current 2026-27 continuation, selected clusters, eligibility, benefits and application route were not captured.",
+    "benefit_summary": "Current Maharashtra farmer-level benefit and payment terms are unknown. Do not infer a per-acre incentive or assume that every district is covered.",
+    "source_name": "Agriculture Department, Government of Maharashtra — official guidelines index",
+    "source_url": "https://krishi.maharashtra.gov.in/Site/Information/GuideLinesInformation.aspx?ID=6",
+    "application_url": "",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_STATE_GUIDELINE_INDEX_CAPTURE_2024_25_PERIOD_ONLY_PENDING_REVIEW",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Maharashtra Agriculture Department guideline index captured 2026-10-08 lists a Natural Farming Mission guideline for 2024-25; no 2026-27 implementation notice was captured.",
+      "Guideline index: https://krishi.maharashtra.gov.in/Site/Information/GuideLinesInformation.aspx?ID=6.",
+      "Current Maharashtra districts/clusters, farmer eligibility, financial terms, documents and application route remain unknown."
+    ],
+    "document_items": [],
+    "document_review_note": "No current farmer document checklist was captured. Empty list is not confirmation that no documents are required; confirm with the current district/component notice.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check the current State Agriculture Department/district action plan and NMNF notification for the current year.",
+      "Do not treat the 2024-25 guideline as proof of an open 2026-27 application.",
+      "No current farmer application route was captured."
+    ]
+  },
+  {
+    "slug": "paramparagat-krishi-vikas-yojana",
+    "name": "Paramparagat Krishi Vikas Yojana (PKVY) — Maharashtra historical guidance",
+    "name_mr": "",
+    "department": "Department of Agriculture & Farmers Welfare, Government of India; Maharashtra Agriculture Department",
+    "level": "Central/state implementation — current Maharashtra status unknown",
+    "category": "Organic farming / farmer groups",
+    "icon": "leaf",
+    "need": "organic-farming",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "Maharashtra Agriculture Department’s guidelines index lists PKVY/organic group guidance for 2022-23 and 2023-24. Those older documents establish historical guidance only; current 2026-27 continuation, clusters, financial terms and application route were not captured.",
+    "benefit_summary": "No current farmer-level benefit amount or application window is asserted. Confirm the current State/cluster plan before presenting a potential benefit.",
+    "source_name": "Agriculture Department, Government of Maharashtra — official guidelines index",
+    "source_url": "https://krishi.maharashtra.gov.in/Site/Information/GuideLinesInformation.aspx?ID=6",
+    "application_url": "",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_STATE_GUIDELINE_INDEX_CAPTURE_2022_24_PERIOD_ONLY_PENDING_REVIEW",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Maharashtra Agriculture Department guideline index captured 2026-10-08 lists older PKVY/organic group documents for 2022-23 and 2023-24; current 2026-27 implementation was not captured.",
+      "Official guideline index: https://krishi.maharashtra.gov.in/Site/Information/GuideLinesInformation.aspx?ID=6.",
+      "Do not use historic group-level rates/targets as current eligibility or a current application window."
+    ],
+    "document_items": [],
+    "document_review_note": "No current checklist was captured. PKVY records and requirements are group/component-specific; an empty list is not confirmation that no documents are required.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check with the district Agriculture Department whether a current PKVY cluster/group is active.",
+      "Confirm the current-year group, certification, input and benefit rules from the relevant official guideline.",
+      "No current farmer application route was established."
+    ]
+  },
+  {
+    "slug": "maharashtra-fpc-credit-guarantee-fund",
+    "name": "Credit Guarantee Fund Scheme for Farmer Producer Companies (Maharashtra)",
+    "name_mr": "शेतकरी उत्पादक कंपन्यांसाठी पत हमी निधी योजना",
+    "department": "Agriculture Department / SFAC Maharashtra, Government of Maharashtra",
+    "level": "Maharashtra — FPC and lender-level finance support",
+    "category": "FPO / credit guarantee",
+    "icon": "coins",
+    "need": "farmer-groups",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "The Maharashtra Agriculture Department/SFAC page describes a lender-facing credit guarantee for qualifying registered Farmer Producer Companies. The facility reduces eligible lender risk; it is not cash paid to an individual farmer or a loan approval. The page is undated, so current fund availability and terms need confirmation.",
+    "benefit_summary": "The captured State page states guarantee cover up to 85% of eligible sanctioned credit or ₹85 lakh, whichever is lower; one FPC can use it at most twice in five years. This is lender risk cover, not a grant, and the lender still appraises the project. Current terms are unconfirmed.",
+    "source_name": "Agriculture Department, Government of Maharashtra — SFAC schemes page",
+    "source_url": "https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+    "application_url": "https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_STATE_SFAC_PAGE_CAPTURED_UNDATED_CURRENT_STATUS_UNCONFIRMED",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Maharashtra Agriculture Department SFAC page directly captured 2026-10-08; it describes a State page for the FPC Credit Guarantee Fund. The page is undated: https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+      "Captured page eligibility: a Companies Act-registered FPC; at least 500 individual farmer shareholders; at least 33% small/marginal/landless-tenant farmer shareholders; no individual shareholder above 5% (institutional exceptions stated); elected/appointed board with at least one woman member; management committee, business plan and 18-month projections. Current applicability needs review.",
+      "Captured page states guarantee cover to eligible lender institutions/banks of up to 85% of eligible sanctioned credit or ₹85 lakh, whichever is lower; a lender may use the facility at most twice for one FPC in five years.",
+      "The page describes a 0.85% one-time guarantee fee capped at ₹85,000 and an annual service fee of 0.25%, payable by eligible lenders; charges, current rate and whether passed on to borrower require current-source review.",
+      "The eligible lending institution/bank submits the guarantee application to the Maharashtra SFAC after sanction under the stated timelines; the FPC does not apply individually for the guarantee. Lender credit decision remains separate."
+    ],
+    "document_items": [],
+    "document_review_note": "The undated page describes organization-level records including company registration, shareholder/member records, board and woman-member information, business plan and 18-month projections; lender-submitted certified records and bank appraisal are also mentioned. This is not a complete current checklist. Confirm current forms, fees and thresholds with the State SFAC/lender; do not upload confidential business or bank documents to Scheme Mitra.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "A qualifying registered FPC and prospective lender should confirm that the State facility is active and the current FPC criteria are met.",
+      "The official information page describes lender-led appraisal/proposal submission; contact the State SFAC/lending bank for the current process and forms.",
+      "Farmers do not apply individually for this guarantee. Scheme Mitra does not arrange loans or guarantee sanction."
+    ]
+  },
+  {
+    "slug": "maharashtra-agri-industry-interest-free-capital-loan",
+    "name": "Interest-Free Capital Loan Scheme for Agriculture Businesses (Maharashtra)",
+    "name_mr": "कृषि उद्योगासाठी बिनव्याजी भांडवल कर्ज योजना",
+    "department": "Agriculture Department / SFAC Maharashtra, Government of Maharashtra",
+    "level": "Maharashtra — eligible agribusiness project finance",
+    "category": "Agribusiness / project finance",
+    "icon": "factory",
+    "need": "agri-enterprise",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "Maharashtra’s undated SFAC schemes page describes bank-linked capital assistance for eligible agriculture-business/processing projects, including FPC-sponsored projects. It is a repayable project-finance instrument, not a crop-input subsidy or an individual farmer grant. Current fund availability and terms are unconfirmed.",
+    "benefit_summary": "The undated State page lists support of 26% of promoter own investment, or at least 40% for FPC-sponsored agribusiness, up to ₹50 lakh, with stated project-cost bands. The assistance is interest-free only until repayment of the bank term loan, then becomes a repayable term loan; this is not a grant. Current agreement and availability must be confirmed.",
+    "source_name": "Agriculture Department, Government of Maharashtra — SFAC schemes page",
+    "source_url": "https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+    "application_url": "https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_STATE_SFAC_PAGE_CAPTURED_UNDATED_CURRENT_STATUS_UNCONFIRMED",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Maharashtra Agriculture Department/SFAC scheme page directly captured 2026-10-08; page is undated: https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+      "The captured page lists eligible bank-sanctioned agribusiness/agri-processing projects and project proponents including private individuals, farmers, FPC groups, firms/companies, SHGs, agrigraduates and export-linked businesses, subject to its criteria.",
+      "Page states capital assistance based on project cost: 26% of promoter own investment excluding bank loan, or at least 40% for FPC-sponsored agri-industry, maximum ₹50 lakh; stated project cost ₹15 lakh–₹5 crore, with ₹10 lakh minimum in specified backward districts. Verify current definitions/limits before use.",
+      "After the bank term loan is fully repaid, the initially interest-free assistance converts to a term loan repayable to SFAC with applicable interest under the agreement. It is not a grant.",
+      "The same page describes a Project Development Facility for a bankable detailed project report, ₹25,000–₹1 lakh by stated project-cost band for projects above ₹15 lakh; current eligibility and funding require review.",
+      "The page says the lender evaluates the detailed project report, sanctions the term loan and recommends the State SFAC capital support, which is disbursed through the bank. No current application window was confirmed."
+    ],
+    "document_items": [],
+    "document_review_note": "The undated page mentions a detailed bankable project report, bank appraisal/sanction and project-proponent/enterprise records. It does not provide a complete current checklist. Confirm current eligibility, project-cost limits, collateral, repayment agreement and documents with the State SFAC/lender; do not send business/bank files to Scheme Mitra.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Confirm current scheme availability and project eligibility with the Agriculture Department/SFAC Maharashtra before preparing a project.",
+      "The official page describes a detailed project report and bank appraisal/sanction; the State agency and lender determine the approved amount and repayment terms.",
+      "Do not rely on “interest-free” without reading the current agreement. Scheme Mitra does not provide lending or project approval."
+    ]
+  },
+  {
+    "slug": "sfac-equity-grant-for-farmer-producer-companies",
+    "name": "SFAC Equity Grant Scheme for Farmer Producer Companies (Maharashtra page)",
+    "name_mr": "शेतकरी उत्पादक कंपन्यांसाठी समभाग निधी योजना",
+    "department": "Department of Agriculture & Farmers Welfare, Government of India / SFAC; Maharashtra Agriculture Department page",
+    "level": "Central scheme information — FPC-level; Maharashtra page",
+    "category": "Farmer Producer Organization / equity grant",
+    "icon": "group",
+    "need": "farmer-groups",
+    "crop_tags": [
+      "*"
+    ],
+    "summary": "The Maharashtra Agriculture Department’s SFAC page describes a matching-equity facility for registered Farmer Producer Companies. The page states a maximum of ₹10 lakh per FPC, with member/shareholding and governance conditions. It is an organization-level equity grant, not a direct cash benefit to each farmer. The page is undated and current availability/terms are unconfirmed.",
+    "benefit_summary": "The captured page describes grant assistance matching eligible FPC member equity, capped at ₹10 lakh per FPC. It states the funds are credited to the FPC bank account and additional shares must be issued to eligible shareholders within 45 days. This is historical page content, not proof that a current call is open.",
+    "source_name": "Agriculture Department, Government of Maharashtra — SFAC schemes page",
+    "source_url": "https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+    "application_url": "https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_STATE_SFAC_PAGE_CAPTURED_UNDATED_CURRENT_STATUS_UNCONFIRMED",
+    "data_status": "OFFICIAL_SOURCE_CAPTURE_UNVERIFIED",
+    "source_facts": [
+      "Maharashtra Agriculture Department SFAC page directly captured 2026-10-08; the page is undated: https://krishi.maharashtra.gov.in/1148/%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE",
+      "The page describes a registered FPC with at least 50 farmer shareholders, member share capital, at least 33% small/marginal/landless-tenant farmer shareholders, limits on individual/institutional shareholding, a farmer-representative board including a woman member, an 18-month business plan, a bank account and audited accounts as criteria. Exact current criteria require review.",
+      "The page states matching equity support equal to eligible member share capital, capped at ₹10 lakh per FPC. It describes a maximum share-based amount for each shareholder category and issuance of additional shares within 45 days; per-category caps and process need line-by-line reviewer confirmation before farmer display.",
+      "The page describes application/agreement through SFAC and support to the FPC bank account; it is not an individual farmer application or a personal cash benefit.",
+      "This page’s Equity Grant Scheme is separate from the 10,000 FPO Central Sector Scheme and from the Maharashtra FPC Credit Guarantee Fund. Do not combine their eligibility thresholds, caps or application processes.",
+      "Current availability and any later amendments were not established because the official page has no visible date."
+    ],
+    "document_items": [],
+    "document_review_note": "The undated page describes company registration, at least 50 farmer shareholders, member equity/share records, shareholder-category limits, a farmer-representative board with a woman member, an 18-month business plan, bank account and audited statements. No complete current official checklist or current call was captured. Empty checklist is not confirmation that no documents are required; confirm with SFAC before applying.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "This is an FPC-level facility. The FPC (not an individual farmer) must confirm current availability, current eligibility and any amendments with SFAC/Maharashtra Agriculture Department.",
+      "The page describes an application/agreement process through SFAC and equity support credited to the FPC bank account; use only the current official form/route supplied by SFAC.",
+      "Do not assume the page is a current application call. Scheme Mitra does not submit applications or transfer funds."
+    ]
+  },
+  {
+    "slug": "nlm-rural-poultry-entrepreneurship",
+    "name": "National Livestock Mission — Rural Poultry Entrepreneurship Development",
+    "name_mr": "",
+    "department": "Department of Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all-India programme, implemented with State agencies",
+    "category": "Livestock",
+    "icon": "leaf",
+    "need": "livestock",
+    "crop_tags": [],
+    "summary": "The NLM guideline describes a rural-poultry parent farm, rural hatchery and brooder-cum-mother unit using low-input technology birds, with at least 1,000 parent layers. It is a capital-project subsidy for eligible entrepreneurs/entities, not a small-bird distribution scheme. Current Maharashtra EOI and project availability are unknown.",
+    "benefit_summary": "The captured guideline states a one-time capital subsidy of 50% of eligible project cost, capped at ₹25 lakh per unit, released in two conditional instalments. Land purchase/rent/lease, working capital and personal vehicles are excluded. Do not treat the cap as guaranteed cash or a current open call.",
+    "source_name": "Department of Animal Husbandry and Dairying (DAHD), Government of India",
+    "source_url": "https://dahd.gov.in/en/schemes/programmes/national_livestock_mission",
+    "application_url": "https://nlm.udyamimitra.in/",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_DAHD_GUIDELINE_CAPTURED_JAN_2025_PENDING_INDEPENDENT_REVIEW",
+    "data_status": "OFFICIAL_NLM_GUIDELINE_CAPTURE_UNVERIFIED_PORTAL_FETCH_FAILED_CURRENT_STATE_EOI_UNKNOWN",
+    "source_facts": [
+      "The official DAHD National Livestock Mission page is the scheme-information reference. The directly fetched January 2025 operational guideline hosted by DAHD describes the central scheme across India and supplies the detailed component terms below: https://dahd.gov.in/sites/default/files/2026-04/NLMGuidelinesJan2025.pdf.",
+      "The directly fetched NLM guideline states general entrepreneur criteria: relevant training/experience/expert; either a sanctioned project loan or a bank appraisal and guarantee for self-financing; own or leased project land except group entities under separate criteria; capacity to operate at least three years; relevant KYC; and at least 10% project-cost margin money. The full activity-specific test still needs a named reviewer.",
+      "Guideline route: submit through https://nlm.udyamimitra.in/; State Implementing Agency scrutinizes and recommends, lender appraises/sanctions, State Level Executive Committee recommends, DAHD Project Approval Committee approves, and SIDBI channels subsidy to the lending institution. First/final instalments have project, contribution and verification conditions.",
+      "For self-financing projects, the guideline describes bank appraisal, expenditure verification and a three-year scheduled-bank guarantee; the guarantee and declaration must be uploaded. Detailed application evidence and current State EOI/allocations must be confirmed.",
+      "The directly fetched January 2025 guideline, Activity I under the NLM breed-development sub-mission, specifies a parent farm/rural hatchery/mother unit with a minimum of 1,000 parent layers; birds are to be low-input-technology or otherwise suitable for free-range management.",
+      "The guideline states 50% capital subsidy up to ₹25 lakh per unit in two instalments. Self-financing requires bank appraisal and a three-year bank guarantee; the first instalment is conditional on verified own expenditure. It excludes working capital, personal vehicle, land purchase, rent and lease costs.",
+      "The official guideline links https://nlm.udyamimitra.in/, but direct portal fetch returned HTTP 500 on 2026-10-08. The URL is an official application lead, not confirmation that the portal or a Maharashtra EOI is currently accepting applications."
+    ],
+    "document_items": [],
+    "document_review_note": "NLM entrepreneurship is a capital project, not a general input subsidy. The guideline names training/experience, KYC, land or lease (with separate group rules), lender appraisal/loan or self-finance bank guarantee, margin money and project evidence. The full current document checklist depends on activity and State EOI; an empty checklist is not confirmation that no documents are required. Do not send KYC/bank files to Scheme Mitra.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check whether Maharashtra’s State Implementing Agency has an open Expression of Interest for this activity and unit size. The NLM portal URL is linked by DAHD, but returned HTTP 500 on direct fetch 2026-10-08; recheck the official portal before use.",
+      "Prepare the activity-specific project and submit on the official NLM portal. The State Implementing Agency screens it and coordinates lender appraisal/loan or the documented self-finance route.",
+      "State Level Executive Committee and DAHD Project Approval Committee approval are required. Subsidy is routed through SIDBI in conditional instalments after specified contribution/project verification; it is not an automatic upfront payment.",
+      "Confirm current guidelines, eligible breeds/equipment, land, KYC and bank-guarantee requirements directly with DAHD/State Animal Husbandry Department before investing."
+    ]
+  },
+  {
+    "slug": "nlm-sheep-goat-entrepreneurship",
+    "name": "National Livestock Mission — Sheep and Goat Entrepreneurship Development",
+    "name_mr": "",
+    "department": "Department of Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all-India programme, implemented with State agencies",
+    "category": "Livestock",
+    "icon": "leaf",
+    "need": "livestock",
+    "crop_tags": [],
+    "summary": "The NLM guideline describes capital support for high-genetic-variety sheep/goat breeding units of 100–500 females and 5–25 males. Eligible entities include individuals and specified farmer groups/companies. Current Maharashtra EOI, eligible breeds and project approval remain to be confirmed.",
+    "benefit_summary": "The captured schedule sets maximum capital-subsidy ceilings by unit: ₹10 lakh for 100+5; ₹20 lakh for 200+10; ₹30 lakh for 300+15; ₹40 lakh for 400+20; and ₹50 lakh for 500+25 animals. Assistance is up to 50% of eligible capital cost in two conditional instalments; this is not guaranteed or working-capital support.",
+    "source_name": "Department of Animal Husbandry and Dairying (DAHD), Government of India",
+    "source_url": "https://dahd.gov.in/en/schemes/programmes/national_livestock_mission",
+    "application_url": "https://nlm.udyamimitra.in/",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_DAHD_GUIDELINE_CAPTURED_JAN_2025_PENDING_INDEPENDENT_REVIEW",
+    "data_status": "OFFICIAL_NLM_GUIDELINE_CAPTURE_UNVERIFIED_PORTAL_FETCH_FAILED_CURRENT_STATE_EOI_UNKNOWN",
+    "source_facts": [
+      "The official DAHD National Livestock Mission page is the scheme-information reference. The directly fetched January 2025 operational guideline hosted by DAHD describes the central scheme across India and supplies the detailed component terms below: https://dahd.gov.in/sites/default/files/2026-04/NLMGuidelinesJan2025.pdf.",
+      "The directly fetched NLM guideline states general entrepreneur criteria: relevant training/experience/expert; either a sanctioned project loan or a bank appraisal and guarantee for self-financing; own or leased project land except group entities under separate criteria; capacity to operate at least three years; relevant KYC; and at least 10% project-cost margin money. The full activity-specific test still needs a named reviewer.",
+      "Guideline route: submit through https://nlm.udyamimitra.in/; State Implementing Agency scrutinizes and recommends, lender appraises/sanctions, State Level Executive Committee recommends, DAHD Project Approval Committee approves, and SIDBI channels subsidy to the lending institution. First/final instalments have project, contribution and verification conditions.",
+      "For self-financing projects, the guideline describes bank appraisal, expenditure verification and a three-year scheduled-bank guarantee; the guarantee and declaration must be uploaded. Detailed application evidence and current State EOI/allocations must be confirmed.",
+      "The directly fetched January 2025 guideline, Activity II, specifies sheep/goat breeding units from 100 to 500 females and 5 to 25 males and lists maximum subsidy ceilings of ₹10/20/30/40/50 lakh for the corresponding 100+5/200+10/300+15/400+20/500+25 unit sizes.",
+      "The guideline states up to 50% of capital cost, paid in two instalments, and names Individuals, SHGs, FPOs, FCOs, JLGs and Section 8 companies as eligible entities. Breed quality/approved breed choice and current State EOI require confirmation.",
+      "No support is stated for working capital, personal vehicles, land purchase, rent or lease. A self-financed project follows the bank-appraisal/guarantee route in the general NLM guideline.",
+      "The official guideline links https://nlm.udyamimitra.in/, but direct portal fetch returned HTTP 500 on 2026-10-08. The URL is an official application lead, not confirmation that the portal or a Maharashtra EOI is currently accepting applications."
+    ],
+    "document_items": [],
+    "document_review_note": "NLM entrepreneurship is a capital project, not a general input subsidy. The guideline names training/experience, KYC, land or lease (with separate group rules), lender appraisal/loan or self-finance bank guarantee, margin money and project evidence. The full current document checklist depends on activity and State EOI; an empty checklist is not confirmation that no documents are required. Do not send KYC/bank files to Scheme Mitra.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check whether Maharashtra’s State Implementing Agency has an open Expression of Interest for this activity and unit size. The NLM portal URL is linked by DAHD, but returned HTTP 500 on direct fetch 2026-10-08; recheck the official portal before use.",
+      "Prepare the activity-specific project and submit on the official NLM portal. The State Implementing Agency screens it and coordinates lender appraisal/loan or the documented self-finance route.",
+      "State Level Executive Committee and DAHD Project Approval Committee approval are required. Subsidy is routed through SIDBI in conditional instalments after specified contribution/project verification; it is not an automatic upfront payment.",
+      "Confirm current guidelines, eligible breeds/equipment, land, KYC and bank-guarantee requirements directly with DAHD/State Animal Husbandry Department before investing."
+    ]
+  },
+  {
+    "slug": "nlm-piggery-entrepreneurship",
+    "name": "National Livestock Mission — Piggery Entrepreneurship Development",
+    "name_mr": "",
+    "department": "Department of Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all-India programme, implemented with State agencies",
+    "category": "Livestock",
+    "icon": "leaf",
+    "need": "livestock",
+    "crop_tags": [],
+    "summary": "The NLM guideline describes a pig-breeding project with 50–100 sows and 5–10 boars. The capital-project route is open only to eligible entrepreneurs/entities after State and central appraisal; current Maharashtra intake and project feasibility are not confirmed.",
+    "benefit_summary": "The captured guideline lists maximum subsidy ceilings of ₹15 lakh for 50 sows+5 boars and ₹30 lakh for 100 sows+10 boars, at up to 50% of eligible capital cost, in two conditional instalments. Working capital, personal vehicles and land purchase/rent/lease are excluded.",
+    "source_name": "Department of Animal Husbandry and Dairying (DAHD), Government of India",
+    "source_url": "https://dahd.gov.in/en/schemes/programmes/national_livestock_mission",
+    "application_url": "https://nlm.udyamimitra.in/",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_DAHD_GUIDELINE_CAPTURED_JAN_2025_PENDING_INDEPENDENT_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_NLM_GUIDELINE_CAPTURE_UNVERIFIED_PORTAL_FETCH_FAILED_CURRENT_STATE_EOI_UNKNOWN",
+    "source_facts": [
+      "The official DAHD National Livestock Mission page is the scheme-information reference. The directly fetched January 2025 operational guideline hosted by DAHD describes the central scheme across India and supplies the detailed component terms below: https://dahd.gov.in/sites/default/files/2026-04/NLMGuidelinesJan2025.pdf.",
+      "The directly fetched NLM guideline states general entrepreneur criteria: relevant training/experience/expert; either a sanctioned project loan or a bank appraisal and guarantee for self-financing; own or leased project land except group entities under separate criteria; capacity to operate at least three years; relevant KYC; and at least 10% project-cost margin money. The full activity-specific test still needs a named reviewer.",
+      "Guideline route: submit through https://nlm.udyamimitra.in/; State Implementing Agency scrutinizes and recommends, lender appraises/sanctions, State Level Executive Committee recommends, DAHD Project Approval Committee approves, and SIDBI channels subsidy to the lending institution. First/final instalments have project, contribution and verification conditions.",
+      "For self-financing projects, the guideline describes bank appraisal, expenditure verification and a three-year scheduled-bank guarantee; the guarantee and declaration must be uploaded. Detailed application evidence and current State EOI/allocations must be confirmed.",
+      "The directly fetched January 2025 guideline, Activity IV, specifies breeder farms with 50–100 sows and 5–10 boars; the schedule sets maximum capital subsidy of ₹15 lakh for 50+5 and ₹30 lakh for 100+10.",
+      "The guideline states up to 50% of eligible project capital cost, in two instalments, for Individuals, SHGs, FPOs, FCOs, JLGs and Section 8 companies. Breeding-stock quality and equipment are limited by guideline annexures.",
+      "The NLM guideline excludes working capital, personal vehicle and land purchase/rent/lease. Self-financing requires bank appraisal and a three-year bank guarantee; current Maharashtra State EOI remains unknown.",
+      "The official guideline links https://nlm.udyamimitra.in/, but direct portal fetch returned HTTP 500 on 2026-10-08. The URL is an official application lead, not confirmation that the portal or a Maharashtra EOI is currently accepting applications."
+    ],
+    "document_items": [],
+    "document_review_note": "NLM entrepreneurship is a capital project, not a general input subsidy. The guideline names training/experience, KYC, land or lease (with separate group rules), lender appraisal/loan or self-finance bank guarantee, margin money and project evidence. The full current document checklist depends on activity and State EOI; an empty checklist is not confirmation that no documents are required. Do not send KYC/bank files to Scheme Mitra.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check whether Maharashtra’s State Implementing Agency has an open Expression of Interest for this activity and unit size. The NLM portal URL is linked by DAHD, but returned HTTP 500 on direct fetch 2026-10-08; recheck the official portal before use.",
+      "Prepare the activity-specific project and submit on the official NLM portal. The State Implementing Agency screens it and coordinates lender appraisal/loan or the documented self-finance route.",
+      "State Level Executive Committee and DAHD Project Approval Committee approval are required. Subsidy is routed through SIDBI in conditional instalments after specified contribution/project verification; it is not an automatic upfront payment.",
+      "Confirm current guidelines, eligible breeds/equipment, land, KYC and bank-guarantee requirements directly with DAHD/State Animal Husbandry Department before investing."
+    ]
+  },
+  {
+    "slug": "nlm-feed-fodder-entrepreneurship",
+    "name": "National Livestock Mission — Feed and Fodder Entrepreneurship",
+    "name_mr": "",
+    "department": "Department of Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all-India programme, implemented with State agencies",
+    "category": "Livestock",
+    "icon": "leaf",
+    "need": "livestock",
+    "crop_tags": [],
+    "summary": "DAHD lists a Feed and Fodder Development sub-mission covering certified fodder seed and entrepreneur-led fodder processing such as silage, hay-baling and fodder-block units. Specific current unit sizes, subsidy ceilings and Maharashtra application allocations were not transcribed from the linked guideline, so no rate is claimed.",
+    "benefit_summary": "Specific eligible project cost, subsidy percentage/ceiling, unit scale, beneficiary documentation and current Maharashtra EOI are unknown in this capture. Verify the current NLM component guideline before considering an investment.",
+    "source_name": "Department of Animal Husbandry and Dairying (DAHD), Government of India",
+    "source_url": "https://dahd.gov.in/en/schemes/programmes/national_livestock_mission",
+    "application_url": "https://nlm.udyamimitra.in/",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_DAHD_PAGE_SEARCH_LEAD_JAN_2025_GUIDELINE_DIRECT_FETCHED_COMPONENT_NORMS_NOT_TRANSCRIBED",
+    "data_status": "OFFICIAL_DAHD_COMPONENT_SEARCH_LEAD_PORTAL_FETCH_FAILED_CURRENT_UNIT_TERMS_UNKNOWN",
+    "source_facts": [
+      "Official DAHD National Livestock Mission page/search-listing evidence identifies a Feed and Fodder Development sub-mission and refers to certified fodder-seed availability and fodder-block, hay-baling and silage-making activity. Retain this as a programme-description lead only; detailed component terms were not transcribed.",
+      "The January 2025 NLM operational-guideline PDF hosted by DAHD was directly fetched, but the complete Feed and Fodder component cost norms and eligibility annexures were not captured in this review: https://dahd.gov.in/sites/default/files/2026-04/NLMGuidelinesJan2025.pdf.",
+      "Any common NLM entrepreneur-eligibility and approval conditions apply only as specified by the selected activity; current Maharashtra EOI/allocations must be checked with the State Implementing Agency.",
+      "Official application portal listed in the NLM guideline: https://nlm.udyamimitra.in/.",
+      "The official guideline lists https://nlm.udyamimitra.in/, but direct portal fetch returned HTTP 500 on 2026-10-08. This is an official application lead, not confirmation that the portal or a Maharashtra EOI is currently accepting applications."
+    ],
+    "document_items": [],
+    "document_review_note": "No complete feed/fodder checklist was transcribed. The selected unit may require project, land, technical, financing, KYC and equipment evidence under the current component guideline. Empty checklist is not confirmation that no documents are required; do not share sensitive files with Scheme Mitra.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Check whether Maharashtra’s State Implementing Agency has an open Expression of Interest for this activity and unit size; the national scheme page alone does not prove current local intake.",
+      "Prepare the activity-specific project and submit on the official NLM portal. The State Implementing Agency screens it and coordinates lender appraisal/loan or the documented self-finance route.",
+      "State Level Executive Committee and DAHD Project Approval Committee approval are required. Subsidy is routed through SIDBI in conditional instalments after specified contribution/project verification; it is not an automatic upfront payment.",
+      "Confirm current guidelines, eligible breeds/equipment, land, KYC and bank-guarantee requirements directly with DAHD/State Animal Husbandry Department before investing."
+    ]
+  },
+  {
+    "slug": "pm-mkssy-aquaculture-insurance-incentive",
+    "name": "PM-MKSSY — Aquaculture Insurance Incentive",
+    "name_mr": "",
+    "department": "Department of Fisheries, Ministry of Fisheries, Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all States/UTs, including Maharashtra",
+    "category": "Fisheries",
+    "icon": "leaf",
+    "need": "fisheries",
+    "crop_tags": [],
+    "summary": "PM-MKSSY offers a one-time incentive when an eligible fish farmer purchases aquaculture insurance for one crop cycle. The official NFDP page states an area/volume ceiling, category uplift and DBT process. Current insurer products, remaining allocation and Maharashtra operational status must be checked before purchase.",
+    "benefit_summary": "For pond/farm aquaculture, the captured NFDP terms state 40% of premium, capped at ₹25,000 per hectare of water-spread area and ₹1 lakh per farmer, for farms up to 4 ha; under 1 ha is pro-rated. For intensive systems, 40% of premium up to ₹1 lakh for eligible units up to 1,800 m³. SC/ST and women receive an additional 10% of the general incentive. One crop cycle only; not a standing insurance payout.",
+    "source_name": "National Fisheries Digital Platform (NFDP), Department of Fisheries, Government of India",
+    "source_url": "https://nfdp.dof.gov.in/nfdp/#/insurance",
+    "application_url": "https://nfdp.dof.gov.in/nfdp_benificary/#/",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_NFDP_COMPONENT_PAGE_AND_DOF_GUIDELINE_CAPTURED_PENDING_HUMAN_REVIEW",
+    "data_status": "OFFICIAL_NFDP_INSURANCE_TERMS_CAPTURED_CURRENT_ALLOCATION_UNCONFIRMED",
+    "source_facts": [
+      "NFDP Aquaculture Insurance page directly captured 2026-10-08 states: one-time incentive for willing farmers with farm size up to 4 ha WSA; 40% of premium, max ₹25,000/ha and ₹1 lakh per farmer; sub-1-ha amounts pro-rated; intensive systems (cage/RAS/biofloc/raceway etc.) 40% of premium, max ₹1 lakh and unit size up to 1,800 m³; one crop cycle only; SC/ST and women receive an additional 10% of general-category incentive: https://nfdp.dof.gov.in/nfdp/#/insurance.",
+      "The same NFDP page says incentive is paid in one go directly through DBT and links the beneficiary login at https://nfdp.dof.gov.in/nfdp_benificary/#/.",
+      "NFDP home directly captured 2026-10-08 states registration is mandatory for PM-MKSSY components and benefits are for Indian citizens: https://nfdp.dof.gov.in/nfdp/#/.",
+      "The directly fetched Department of Fisheries ESMF states PM-MKSSY is a central sector sub-scheme approved for FY 2023-24 through FY 2026-27 and describes post-purchase insurance incentive. Current component allocation/availability and any later amendments require confirmation.",
+      "If insurance is bought offline, the ESMF says supporting documents must be uploaded on NFDP; neither the current portal page nor this capture supplies the complete case-specific evidence list."
+    ],
+    "document_items": [],
+    "document_review_note": "The direct component page does not provide a complete application document list. The Department guideline says offline insurance purchases require documents to be uploaded on NFDP; verify accepted policy/claim evidence and current portal steps before purchase. Empty checklist is not confirmation that no documents are required. Scheme Mitra does not collect Aadhaar, bank details, insurance policy files or claim documents.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Register on the official NFDP and confirm that the applicant is eligible under the current component.",
+      "Choose an eligible aquaculture insurance product and purchase it for the intended single crop cycle; confirm the policy, WSA/volume and current incentive allocation before payment.",
+      "If the policy is bought offline, follow NFDP’s current upload process; otherwise complete the online portal’s claim/incentive steps.",
+      "Only the official Department/NFDP determines and transfers any incentive. Scheme Mitra does not sell insurance, submit claims or promise payment."
+    ]
+  },
+  {
+    "slug": "pm-mkssy-fisheries-performance-grant",
+    "name": "PM-MKSSY — Fisheries Value-Chain and Safety Performance Grants",
+    "name_mr": "",
+    "department": "Department of Fisheries, Ministry of Fisheries, Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all States/UTs, including Maharashtra",
+    "category": "Fisheries",
+    "icon": "leaf",
+    "need": "fisheries",
+    "crop_tags": [],
+    "summary": "PM-MKSSY’s NFDP page describes post-investment performance grants for fisheries/aquaculture micro-enterprises improving value-chain efficiency (Component 2) and micro/small enterprises adopting fish-product safety and quality systems (Component 3). The 2024 Cabinet release gives ceilings, but the portal links a newer V2.0 guideline that could not be fetched; the ceilings below are historical approval terms pending current-guideline comparison.",
+    "benefit_summary": "The 2024 Cabinet approval caps Component 2 micro-enterprise grants at 25% of investment or ₹35 lakh (general), and 35% or ₹45 lakh for SC/ST/women-owned micro-enterprises, whichever is lower; eligible group bodies are capped at 35% or ₹2 crore. Component 3 has those micro caps plus small-enterprise caps of 25% or ₹75 lakh (general) and 35% or ₹1 crore (SC/ST/women-owned), whichever is lower. Payment is performance-based after investment/verification, not an upfront subsidy; current V2.0 ceilings must be checked.",
+    "source_name": "National Fisheries Digital Platform (NFDP) and Press Information Bureau, Government of India",
+    "source_url": "https://nfdp.dof.gov.in/nfdp/#/performance-grant",
+    "application_url": "https://nfdp.dof.gov.in/nfdp_benificary/#/",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_NFDP_COMPONENT_AND_PIB_CABINET_RELEASE_CAPTURED_CURRENT_GUIDELINE_COMPARE_PENDING",
+    "data_status": "OFFICIAL_NFDP_COMPONENT_AND_2024_PIB_TERMS_CAPTURED_V2_GUIDELINE_FETCH_FAILED",
+    "source_facts": [
+      "NFDP Performance Grant page directly captured 2026-10-08 describes Component 2 value-chain efficiency grants for fisheries/aquaculture micro-enterprises and Component 3 fish-product safety/quality grants for micro/small enterprises: https://nfdp.dof.gov.in/nfdp/#/performance-grant.",
+      "The PIB Cabinet approval of 2024 gives the listed component caps. For Component 2, micro-enterprises: 25% of investment or ₹35 lakh (general), 35% or ₹45 lakh for SC/ST/women-owned; Village Level Organisations and federations of SHGs, FFPOs and cooperatives: 35% or ₹200 lakh. For Component 3, small-enterprise ceilings are 25% or ₹75 lakh (general) and 35% or ₹100 lakh (SC/ST/women-owned), whichever is lower; the same group ceiling applies. Official release: https://www.pib.gov.in/PressReleasePage.aspx?PRID=2004216.",
+      "The PIB release states eligible grant disbursement can include job-linked payments (₹15,000 per woman job/year, ₹10,000 per man job/year) subject to 50% of the eligible grant, and investment reimbursement after completion subject to the other 50%; actual component criteria and proof require current-guideline review.",
+      "The direct Department ESMF says proposals are supported after post-verification and there are no upfront subsidies. It states the programme period as FY 2023-24 through FY 2026-27: https://www.dof.gov.in/static/uploads/2025/09/db9e0987df6461b69304fe4115aceec9.pdf.",
+      "NFDP currently links a V2.0 Operational Guidelines PDF at https://nfdp.dof.gov.in/nfdp/assets/images/PM-MKSSY-Operational-Guidelines-V2.0.pdf; direct fetch returned HTTP 500, so 2024 caps have not been reconciled against the current operational guideline."
+    ],
+    "document_items": [],
+    "document_review_note": "No complete application checklist was captured. Eligibility is enterprise/component-specific and evidence may include investment invoices, jobs, ownership category and performance/verification records. The current V2.0 guideline could not be fetched; do not rely on the 2024 ceilings until a named reviewer crosschecks the guideline and portal. Empty checklist is not confirmation that no documents are required.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Register on NFDP and select the relevant performance-grant component. The grant is for eligible fisheries value-chain enterprises/groups, not a per-farmer cash payment.",
+      "Review the current V2.0 guideline and portal criteria before making any investment; the recorded 2024 caps may have changed.",
+      "Make eligible investment first, then submit the performance claim with current evidence. The Department guideline describes post-verification and no upfront subsidy.",
+      "Confirm Maharashtra implementation, current application window and category criteria with NFDP/Department of Fisheries; Scheme Mitra does not submit applications."
+    ]
+  },
+  {
+    "slug": "rashtriya-gokul-mission-bovine-farmer-interventions",
+    "name": "Rashtriya Gokul Mission (RGM) — Bovine Farmer Interventions",
+    "name_mr": "",
+    "department": "Department of Animal Husbandry and Dairying, Government of India",
+    "level": "Central — all-India, through State Livestock Development Boards/NDDB",
+    "category": "Livestock",
+    "icon": "leaf",
+    "need": "livestock",
+    "crop_tags": [],
+    "summary": "The direct 2026-27 administrative approval lists farmer-level support for sex-sorted semen and loans for high-genetic-merit IVF-born heifers. That approval states funding only through 30 September 2026 or until approval for the 16th Finance Commission period, whichever comes first. As of the 8 October 2026 capture, a subsequent approval was not captured; current enrollment and benefits are unknown.",
+    "benefit_summary": "The captured approval states up to 50% of sex-sorted semen cost for participating farmers and 3% interest subvention on qualifying loans for high-genetic-merit IVF-born heifers. It does not promise a universal cash grant. A separate 35% capital contribution for heifer-rearing centres is for implementing agencies, not an individual farmer benefit.",
+    "source_name": "Department of Animal Husbandry and Dairying (DAHD), Government of India",
+    "source_url": "https://dahd.gov.in/sites/default/files/2026-05/AARGM2026-27-1.pdf",
+    "application_url": "https://dahd.gov.in/en/schemes/programmes/rashtriya_gokul_mission",
+    "source_checked_at": "2026-10-08",
+    "catalog_capture_date": "2026-10-08",
+    "source_capture_level": "OFFICIAL_2026_27_ADMIN_APPROVAL_PDF_CAPTURED_NEXT_APPROVAL_UNKNOWN",
+    "data_status": "OFFICIAL_2026_27_RGM_APPROVAL_CAPTURED_VALIDITY_ENDED_CURRENT_STATUS_UNKNOWN",
+    "source_facts": [
+      "DAHD administrative approval PDF directly captured 2026-10-08 states Revised RGM implementation throughout India for FY 2026-27 only through 2026-09-30 or the date of approval for the 16th Finance Commission period, whichever comes first, with ₹800 crore allocation: https://dahd.gov.in/sites/default/files/2026-05/AARGM2026-27-1.pdf.",
+      "The same approval states farmer-level assistance up to 50% of sex-sorted semen cost and 3% interest subvention on qualifying loans for high-genetic-merit IVF-born heifers. It also lists 35% capital assistance for heifer-rearing centres, which is for implementing agencies, not a farmer grant.",
+      "The approval requires State Implementing Agency proposals to pass through the State Government to DAHD. It does not provide a farmer self-application link or a complete beneficiary document list.",
+      "DAHD RGM information/guideline page: https://dahd.gov.in/en/schemes/programmes/rashtriya_gokul_mission. A later approval or current Maharashtra enrollment notice was not captured after the 2026-09-30 boundary.",
+      "The official DAHD RGM information-page route is listed for reference only; a direct fetch attempt returned the DAHD homepage rather than the scheme page. The 2026-27 approval PDF above is the direct source; no farmer application link or current page details were captured."
+    ],
+    "document_items": [],
+    "document_review_note": "No current farmer-specific document checklist or application route was captured. Eligibility and evidence depend on the specific semen/loan component and implementing agency. The last direct approval captured had expired by the catalog date; verify a newer approval and Maharashtra process before presenting any benefit. Empty checklist is not confirmation that no documents are required.",
+    "documents_review_complete": false,
+    "checks": [],
+    "eligibility_rules": [],
+    "ruleset_complete": false,
+    "source_review_complete": false,
+    "application_process": [
+      "Do not assume applications or funding are open. First ask the Maharashtra State Animal Husbandry Department, Livestock Development Board or relevant milk union whether a post-2026-09-30 approval and current component intake exist.",
+      "If a current component is confirmed, obtain its specific eligibility, bank/animal evidence and official application process from the implementing agency.",
+      "Scheme Mitra does not arrange loans, select animals, issue official approval or submit a request."
+    ]
+  }
+]

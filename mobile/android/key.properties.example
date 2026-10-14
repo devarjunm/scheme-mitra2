@@ -1,0 +1,5 @@
+# Copy this file to key.properties locally. Never commit key.properties or the keystore.
+storePassword=REPLACE_WITH_UPLOAD_STORE_PASSWORD
+keyPassword=REPLACE_WITH_UPLOAD_KEY_PASSWORD
+keyAlias=REPLACE_WITH_UPLOAD_KEY_ALIAS
+storeFile=upload-keystore.jks

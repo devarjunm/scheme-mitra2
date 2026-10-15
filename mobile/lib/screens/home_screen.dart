@@ -579,6 +579,22 @@ class _ProfileFormState extends State<_ProfileForm> {
   }
 }
 
+class _ErrorBox extends StatelessWidget {
+  const _ErrorBox({required this.message});
+  final String message;
+
+  @override
+  Widget build(BuildContext context) => Container(
+        decoration: BoxDecoration(
+          color: const Color(0xFFFFF0ED),
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: const Color(0xFFF1D3CD)),
+        ),
+        padding: const EdgeInsets.all(12),
+        child: Text(message, style: const TextStyle(color: Color(0xFF92382F))),
+      );
+}
+
 class AccountDeletionScreen extends StatefulWidget {
   const AccountDeletionScreen({super.key, required this.api, required this.language, required this.isDemo});
   final ApiClient api;

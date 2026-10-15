@@ -41,7 +41,7 @@ jobs:
         with:
           channel: stable
           cache: true
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - name: Install required Android platform
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
       - name: Resolve Flutter packages

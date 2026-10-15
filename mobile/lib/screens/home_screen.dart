@@ -208,11 +208,9 @@ class _SchemesTabState extends State<_SchemesTab> {
   void didUpdateWidget(covariant _SchemesTab oldWidget) { super.didUpdateWidget(oldWidget); if (oldWidget.language != widget.language) setState(() => _future = _load()); }
 
   Future<_ListData> _load() async {
-    final results = await Future.wait([
-      widget.api.listSchemes(query: _query, category: _category ?? ''),
-      widget.api.listSaved(),
-    ]);
-    return _ListData(results[0] as List<SchemeRecord>, (results[1] as List<SchemeRecord>).map((item) => item.slug).toSet());
+    final schemes = await widget.api.listSchemes(query: _query, category: _category ?? '');
+    final savedList = await widget.api.listSaved();
+    return _ListData(schemes, savedList.map((item) => item.slug).toSet());
   }
 
   void _refresh() => setState(() => _future = _load());
@@ -701,10 +699,14 @@ class _SchemeCardState extends State<_SchemeCard> {
               setState(() => _saving = true);
               try {
                 await widget.api.saveScheme(widget.scheme.slug, save: !saved);
-                if (mounted) setState(() { _localSaved = !saved; _saving = false; });
+                if (!mounted) return;
+                setState(() { _localSaved = !saved; _saving = false; });
                 widget.onChanged?.call();
               } catch (error) {
-                if (mounted) { setState(() => _saving = false); ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error.toString()))); }
+                if (!mounted) return;
+                setState(() => _saving = false);
+                if (!context.mounted) return;
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error.toString())));
               }
             },
             icon: _saving ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2)) : Icon(saved ? Icons.bookmark_rounded : Icons.bookmark_border_rounded, color: saved ? const Color(0xFF39734D) : null),

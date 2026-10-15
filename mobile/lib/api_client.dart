@@ -18,9 +18,8 @@ class ApiException implements Exception {
 }
 
 class ApiClient {
-  ApiClient({Future<void> Function()? onSessionExpired})
-      : _onSessionExpired = onSessionExpired,
-        _storage = const FlutterSecureStorage() {
+  ApiClient({this._onSessionExpired})
+      : _storage = const FlutterSecureStorage() {
     _baseUrl = _validateBaseUrl(_compileTimeApiBase);
     _dio = Dio(BaseOptions(
       baseUrl: _baseUrl ?? 'https://configuration-required.invalid',
